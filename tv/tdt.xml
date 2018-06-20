@@ -1,0 +1,129 @@
+﻿<?png version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+<title>[COLOR white]LA 1[/COLOR]</title>       
+<link>http://hlsliveamdgl7-lh.akamaihd.net/i/hlsdvrlive_1@583042/master.m3u8</link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]LA 2[/COLOR]</title>       
+<link>http://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586367/master.m3u8</link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Antena 3[/COLOR]</title>       
+<link>https://atresplayerp-i.akamaized.net/antena3mpp/master.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/tdt/antena3.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Cuatro[/COLOR]</title>       
+<link>http://cuatro-mediaset-esp-live.secure.footprint.net/mediaset/cuatro/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/tdt/cuatro.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Telecinco[/COLOR]</title>       
+<link>http://telecinco-mediaset-esp-live.secure.footprint.net/mediaset/telecinco/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/tdt/telecinco.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]La Sexta[/COLOR]</title>       
+<link>https://atresplayerp-i.akamaized.net/geolasextampp/master.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/tdt/lasexta.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]FDF[/COLOR]</title>       
+<link>https://mdslivehls-i.akamaihd.net/hls/live/571650/fdf/bitrate_1.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/tdt/fdf.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Neox[/COLOR]</title>       
+<link>https://atresplayerp-i.akamaized.net/geoneoxmpp/master.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/tdt/neox.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Atreseries[/COLOR]</title>       
+<link>https://atresplayers-i.akamaized.net/geoa3seriesmpp/master.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/tdt/atreseries.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Mega[/COLOR]</title>       
+<link>https://atresplayerp-i.akamaized.net/geomegampp/master.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/tdt/mega.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Energy[/COLOR]</title>       
+<link>http://mypanel.tv:8080/live/berto/berto/8765.m3u8</link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Divinity[/COLOR]</title>       
+<link>http://streaming.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/live.smil/master.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/tdt/divinity.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Nova[/COLOR]</title>       
+<link>https://atresplayerp-i.akamaized.net/geonovampp/master.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/tdt/nova.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]24 Horas[/COLOR]</title>       
+<link>http://hlsliveamdgl8-lh.akamaihd.net/i/hlsdvrlive_1@583030/master.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/tdt/rtve24h.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Intereconomía TV[/COLOR]</title>       
+<link>http://streaming.enetres.net/16011939C62D44ED91350508FB25828B021/live.smil/master.m3u8</link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]13 TV[/COLOR]</title>       
+<link>http://streaming.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/live.smil/master.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/tdt/13tv.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>

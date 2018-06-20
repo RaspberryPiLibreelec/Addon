@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+<title>[COLOR white]Cali TV[/COLOR]</title>       
+<link>http://video.cehis.net/live-calitv/calitv1/playlist.m3u8</link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]RCN[/COLOR]</title>       
+<link>http://mdstrm.com/live-stream-playlist/58a36704896500b908cf1abe.m3u8</link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Caracol TV[/COLOR]</title>       
+<link>http://tecnotv.info/channel/caracol</link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Win Sports[/COLOR]</title>       
+<link></link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/internacional/winsports.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]FOX Sports[/COLOR]</title>       
+<link></link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/internacional/foxports1.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]FOX Sports 2[/COLOR]</title>       
+<link></link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/internacional/foxports2.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]FOX Sports 3[/COLOR]</title>       
+<link></link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/internacional/foxports3.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>

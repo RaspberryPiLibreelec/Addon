@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+<title>[COLOR white]Documentales[/COLOR]</title>
+<link>http://ignoreme</link>
+<externallink>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/documentales.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Peliculas[/COLOR]</title>
+<link>http://ignoreme</link>
+<externallink>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/peliculas.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Series[/COLOR]</title>
+<link>http://ignoreme</link>
+<externallink>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/series.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]TV[/COLOR]</title>
+<link>http://ignoreme</link>
+<externallink>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>

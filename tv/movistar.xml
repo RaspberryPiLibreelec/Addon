@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<item>
+<title>[COLOR white]Movistar Partidazo[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Movistar Fútbol[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]beIN SPORTS[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/94bae21bfa64d6a1d8829eeacca38569/566/index.m3u8</link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Canal Fútbol Replay[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]#0[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/262f9cb9e35b2e64d0571c3e9c1cd4fa/611/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/0.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Movistar Series[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Movistar Series Xtra[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Fox[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/94bae21bfa64d6a1d8829eeacca38569/608/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/fox.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]AXN[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/94bae21bfa64d6a1d8829eeacca38569/579/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/axn.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]TNT[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Comedy Central[/COLOR]</title>
+<link></link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/comedycentral.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Calle 13[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Cosmo[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/f772b8505cfea04b38985616da5f973f/570/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/cosmo.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]AMC[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/262f9cb9e35b2e64d0571c3e9c1cd4fa/614/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/amc.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Fox Life[/COLOR]</title>
+<link></link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/foxlife.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]AXN White[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/262f9cb9e35b2e64d0571c3e9c1cd4fa/609/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/axnwhithe.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]SYFY[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/57130b963cf73960c05f8ec9eb7db0e9/608/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/syfy.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]MTV[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Movistar Estrenos[/COLOR]</title>
+<link>http://mypanel.tv:8080/live/berto/berto/7222.m3u8</link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Movistar Disney[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Movistar Xtra[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Movistar Acción[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/262f9cb9e35b2e64d0571c3e9c1cd4fa/576/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/movistaracción.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Movistar Comedia[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/262f9cb9e35b2e64d0571c3e9c1cd4fa/580/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/movistarcomedia.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Movistar DCine[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/262f9cb9e35b2e64d0571c3e9c1cd4fa/607/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/movistardcine.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Movistar Cine Español[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]TCM[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Hollywood[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/f772b8505cfea04b38985616da5f973f/577/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/hollywood.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Odisea[/COLOR]</title>
+<link>http://mypanel.tv:8080/live/berto/berto/8761.m3u8</link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]Caza y Pesca[/COLOR]</title>
+<link>http://mypanel.tv:8080/live/berto/berto/16269.m3u8</link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]MOVISTAR FUTBOL[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/d0f21a70397d3659fe259aa5e2a62107/575/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/movistarfutbol.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]BEIN SPORTS LALIGA[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/262f9cb9e35b2e64d0571c3e9c1cd4fa/574/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/beinsportslaliga.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]BEIN SPORTS MAX 1[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/45d923b700bdbb53af22c8219ae034ac/574/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/beinsports1max.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]MOVISTAR FORMULA 1[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/262f9cb9e35b2e64d0571c3e9c1cd4fa/612/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/movistarformula1.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]MOVISTAR MOTO GP[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/262f9cb9e35b2e64d0571c3e9c1cd4fa/613/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/movistarmotogp.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]MOVISTAR GOLF[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/262f9cb9e35b2e64d0571c3e9c1cd4fa/569/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/movistargolf.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]LA LIGA TV[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/262f9cb9e35b2e64d0571c3e9c1cd4fa/581/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/laligatv.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]REAL MADRID TV[/COLOR]</title>
+<link>http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/master.m3u8</link>
+<thumbnail></thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]BARCA TV[/COLOR]</title>
+<link>http://edge02.dcarsat.com.ar:1935/DXTV/DXTV/chunklist_b800000_slesp.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/barcatv.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
+
+<item>
+<title>[COLOR white]EUROSPORT 1[/COLOR]</title>
+<link>http://playlist.onlybest.tv/ru/channel/262f9cb9e35b2e64d0571c3e9c1cd4fa/159/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/movistar/eurosport1.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
+<info>[COLOR white][/COLOR]</info>
+</item>
