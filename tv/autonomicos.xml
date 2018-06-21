@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>[COLOR white]Latino webtv[/COLOR]</title>
+<title>[COLOR white]Latino Web TV[/COLOR]</title>
 <link>$doregex[regex]</link>
 
 <regex>
@@ -14,6 +14,6 @@
 <fanart>[regex.param4]</fanart>
 ]]></listrepeat>
 <expres>class="poster-media([^"]+).*?a href="([^"]+).*?title="([^"]+).*?src="([^"]+).*?</expres>
-<page>http://latino-webtv.com/</page>
+<page>http://latino-webtv.com</page>
 </regex>
 </item>
