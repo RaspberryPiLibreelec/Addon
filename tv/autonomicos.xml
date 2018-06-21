@@ -55,3 +55,117 @@
 <page>https://www.inkapelis.com/genero/aventura/</page>
 </regex>
 </item>
+
+
+<item>
+<title>[COLOR withe]Cartelera[/COLOR]</title>
+<link>$doregex[regex3]</link>
+
+<regex>
+<name>regex3</name>
+<listrepeat><![CDATA[
+<SetViewMode>50</SetViewMode>
+<title>[regex3.param3]</title>
+<link>$doregex[regex3]</link>
+<thumbnail>[regex3.param4]</thumbnail>
+<fanart>[regex3.param4]</fanart>
+]]></listrepeat>
+<expres>class="poster-media([^"]+).*?a href="([^"]+).*?title="([^"]+).*?src="([^"]+).*?</expres>
+<page>https://www.inkapelis.com/genero/cartelera/</page>
+</regex>
+</item>
+
+
+<item>
+<title>[COLOR withe]Cartelera[/COLOR]</title>
+<link>$doregex[regex4]</link>
+
+<regex>
+<name>regex4</name>
+<listrepeat><![CDATA[
+<SetViewMode>50</SetViewMode>
+<title>[regex4.param3]</title>
+<link>$doregex[regex4]</link>
+<thumbnail>[regex4.param4]</thumbnail>
+<fanart>[regex4.param4]</fanart>
+]]></listrepeat>
+<expres>class="poster-media([^"]+).*?a href="([^"]+).*?title="([^"]+).*?src="([^"]+).*?</expres>
+<page>https://www.inkapelis.com/genero/cartelera/</page>
+</regex>
+</item>
+
+
+<item>
+<title>[COLOR withe]Ciencia ficcion[/COLOR]</title>
+<link>$doregex[regex5]</link>
+
+<regex>
+<name>regex5</name>
+<listrepeat><![CDATA[
+<SetViewMode>50</SetViewMode>
+<title>[regex5.param3]</title>
+<link>$doregex[regex5]</link>
+<thumbnail>[regex5.param4]</thumbnail>
+<fanart>[regex5.param4]</fanart>
+]]></listrepeat>
+<expres>class="poster-media([^"]+).*?a href="([^"]+).*?title="([^"]+).*?src="([^"]+).*?</expres>
+<page>https://www.inkapelis.com/genero/ciencia-ficcion/</page>
+</regex>
+</item>
+
+
+<item>
+<title>[COLOR withe]Comedia[/COLOR]</title>
+<link>$doregex[regex6]</link>
+
+<regex>
+<name>regex6</name>
+<listrepeat><![CDATA[
+<SetViewMode>50</SetViewMode>
+<title>[regex6.param3]</title>
+<link>$doregex[regex6]</link>
+<thumbnail>[regex6.param4]</thumbnail>
+<fanart>[regex6.param4]</fanart>
+]]></listrepeat>
+<expres>class="poster-media([^"]+).*?a href="([^"]+).*?title="([^"]+).*?src="([^"]+).*?</expres>
+<page>https://www.inkapelis.com/genero/comedia/</page>
+</regex>
+</item>
+
+
+<item>
+<title>[COLOR withe]Crimen[/COLOR]</title>
+<link>$doregex[regex7]</link>
+
+<regex>
+<name>regex7</name>
+<listrepeat><![CDATA[
+<SetViewMode>50</SetViewMode>
+<title>[regex7.param3]</title>
+<link>$doregex[regex7]</link>
+<thumbnail>[regex7.param4]</thumbnail>
+<fanart>[regex7.param4]</fanart>
+]]></listrepeat>
+<expres>class="poster-media([^"]+).*?a href="([^"]+).*?title="([^"]+).*?src="([^"]+).*?</expres>
+<page>https://www.inkapelis.com/genero/crimen/</page>
+</regex>
+</item>
+
+
+<item>
+<title>[COLOR withe]Destacadas[/COLOR]</title>
+<link>$doregex[regex8]</link>
+
+<regex>
+<name>regex8</name>
+<listrepeat><![CDATA[
+<SetViewMode>50</SetViewMode>
+<title>[regex8.param3]</title>
+<link>$doregex[regex8]</link>
+<thumbnail>[regex8.param4]</thumbnail>
+<fanart>[regex8.param4]</fanart>
+]]></listrepeat>
+<expres>class="poster-media([^"]+).*?a href="([^"]+).*?title="([^"]+).*?src="([^"]+).*?</expres>
+<page>https://www.inkapelis.com/genero/destacadas/</page>
+</regex>
+</item>
