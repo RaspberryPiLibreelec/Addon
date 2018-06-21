@@ -2,16 +2,16 @@
 
 <item>
 <title>[COLOR white]Accion[/COLOR]</title>
-<link>$doregex[regexaccion]</link>
+<link>$doregex[regex]</link>
 
 <regex>
 <name>regex</name>
 <listrepeat><![CDATA[
-<SetViewMode>50</SetViewMode>
-<title>[regexaccion.param3]</title>
-<link>$doregex[regexaccion]</link>
-<thumbnail>[regexaccion.param4]</thumbnail>
-<fanart>[regexaccion.param4]</fanart>
+<SetViewMode>55</SetViewMode>
+<title>[regex.param3]</title>
+<link>$doregex[regex]</link>
+<thumbnail>[regex.param4]</thumbnail>
+<fanart>[regex.param4]</fanart>
 ]]></listrepeat>
 <expres>class="poster-media([^"]+).*?a href="([^"]+).*?title="([^"]+).*?src="([^"]+).*?</expres>
 <page>https://www.inkapelis.com/genero/accion/</page>
