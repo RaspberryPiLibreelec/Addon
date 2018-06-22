@@ -1,7 +1,7 @@
 <item>
-<SetViewMode>50</SetViewMode>
+<SetViewMode>500</SetViewMode>
 
-<title>REGEX INKA PELIS EJERCICIO 1</title>
+<title>INKA PELIS</title>
 <link>$doregex[regex]</link>
    
 <regex>
@@ -47,7 +47,7 @@
 <thumbnail>[regex1.param4]</thumbnail>
 <fanart>[regex1.param4]</fanart>
 ]]></listrepeat>
-<expres>(?s)Opciones Para Ver Online([^>]+).*?href="([^"]+).*?title="([^"]+).*?href="([^"]+).*?title="([^"]+).*?href="([^"]+).*?title="([^"]+).*?href="([^"]+).*?title="([^"]+).*?trasnparente">([^<]+).*?</expres>
+<expres>(?s)Opciones Para Ver Online([^>]+).*?href="([^"]+).*?title="([^"]+).*?href="([^"]+).*?title="([^"]+).*?href="([^"]+).*?title="([^"]+).*?href="([^"]+).*?title="([^"]+).*?trasnparente">([^"]+).*?</expres>
 <page>[regex1.param2]</page>
 </regex>
 
@@ -67,4 +67,4 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<item>
+</item>
