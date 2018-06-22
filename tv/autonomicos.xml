@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
+<SetViewMode>500</SetViewMode>
+
 <item>
 
 <title>InkaPelis</title>
@@ -8,7 +10,6 @@
 <regex>
 <name>regex</name>
 <listrepeat><![CDATA[
-<SetViewMode>500</SetViewMode>
 <title>[regex.param2]</title>
 <link>$doregex[makelist]</link>
 <thumbnail></thumbnail>
@@ -21,7 +22,6 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<SetViewMode>500</SetViewMode>
 <title>Pagina [makelist.param1]</title>
 <link>$doregex[regex1]</link>
 ]]></listrepeat>
@@ -32,7 +32,6 @@
 <regex>
 <name>regex1</name>
 <listrepeat><![CDATA[
-<SetViewMode>500</SetViewMode>
 <title>[regex1.param3]</title>
 <link>$doregex[regex2]</link>
 <thumbnail>[regex1.param4]</thumbnail>
@@ -45,7 +44,6 @@
 <regex>
 <name>regex2</name>
 <listrepeat><![CDATA[
-<SetViewMode>500</SetViewMode>
 <title>[regex1.param3]</title>
 <info>[regex2.param10]</info>
 <urlsolve>$doregex[select]</urlsolve>
@@ -72,5 +70,4 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-
 </item>
