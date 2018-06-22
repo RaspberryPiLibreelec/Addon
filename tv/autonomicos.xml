@@ -20,6 +20,7 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
+<SetViewMode>500</SetViewMode>
 <title>Pagina [makelist.param1]</title>
 <link>$doregex[regex1]</link>
 ]]></listrepeat>
@@ -51,7 +52,7 @@
 <thumbnail>[regex1.param4]</thumbnail>
 <fanart>[regex1.param4]</fanart>
 ]]></listrepeat>
-<expres>(?s)class="dlmt">([^"]+).*?a href="([^"]+).*?class="trasnparente">([^"]+).*?<\/p></expres>
+<expres>(?s)class="dlmt">([^"]+).*?a href="([^"]+).*?class="trasnparente">([^<]+).*?<\/p></expres>
 <page>[regex1.param2]</page>
 </regex>
 
