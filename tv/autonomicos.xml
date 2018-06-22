@@ -5,7 +5,7 @@
 <regex>
 <name>regex</name>
 <listrepeat><![CDATA[
-<SetViewMode>50</SetViewMode>
+<SetViewMode>500</SetViewMode>
 <title>[regex.param2]</title>
 <link>$doregex[makelist]</link>
 <thumbnail></thumbnail>
@@ -28,7 +28,7 @@
 <regex>
 <name>regex1</name>
 <listrepeat><![CDATA[
-<SetViewMode>50</SetViewMode>
+<SetViewMode>500</SetViewMode>
 <title>[regex1.param3] - [regex1.param1]</title>
 <link>$doregex[regex2]</link>
 <genre>[regex.param2]</genre>
@@ -43,7 +43,7 @@
 <regex>
 <name>regex2</name>
 <listrepeat><![CDATA[
-<SetViewMode>50</SetViewMode>
+<SetViewMode>500</SetViewMode>
 <title>[regex1.param3]</title>
 <urlsolve>[regex2.param2]</urlsolve>
 <thumbnail>[regex1.param4]</thumbnail>
