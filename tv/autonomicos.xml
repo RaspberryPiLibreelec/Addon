@@ -8,10 +8,10 @@
 <name>regex</name>
 <listrepeat><![CDATA[
 <SetViewMode>500</SetViewMode>
-<title>[regex.param2]</title>
+<title>[regex.param3]</title>
 <link>$doregex[regex]</link>
-<thumbnail>[regex.param3]</thumbnail>
-<fanart>[regex.param3]</fanart>
+<thumbnail>[regex.param4]</thumbnail>
+<fanart>[regex.param4]</fanart>
 ]]></listrepeat>
 <expres><a class="Ntooltip" href="([^"]+).*?">([^"]+).*?<span><br />
 <img src="([^"]+).*?</expres>
