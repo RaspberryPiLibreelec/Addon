@@ -7,14 +7,14 @@
 <regex>
 <name>regex</name>
 <listrepeat><![CDATA[
-<SetViewMode>500</SetViewMode>
+<SetViewMode>50</SetViewMode>
 <title>[regex.param2]</title>
 <link>$doregex[makelist]</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
-<expres>class="([^"]+).*?href="https:\/\/www\.inkapelis\.com\/genero\/([^"]+).*?</expres>
-<page>https://www.inkapelis.com</page>
+<expres>class="([^"]+).*?href="https:\/\/www\.inkapelis\.com\/genero\/([^\/]+).*?</expres>
+<page>https://www.inkapelis.com/</page>
 </regex>
 
 <regex>
@@ -24,7 +24,7 @@
 <title>Pagina [makelist.param1]</title>
 <link>$doregex[regex1]</link>
 ]]></listrepeat>
-<expres>'(([^"]+).*?)'</expres>
+<expres>'(.*?)'</expres>
 <page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25''26''27''28''29''30''31''32''33''34''35''36''37''38''39''40''41''42''43''44''45''46''47''48''49''50''51''52''53''54''55''56''57''58''59''60''61''62''63''64''65''66''67''68''69''70'</page>
 </regex>
 
@@ -52,7 +52,7 @@
 <thumbnail>[regex1.param4]</thumbnail>
 <fanart>[regex1.param4]</fanart>
 ]]></listrepeat>
-<expres>(?s)class="dlmt">([^"]+).*?a href="([^"]+).*?class="trasnparente">([^"]+).*?</expres>
+<expres>(?s)class="dlmt">([^"]+).*?a href="([^"]+).*?class="trasnparente">([^<]+).*?<\/p></expres>
 <page>[regex1.param2]</page>
 </regex>
 
