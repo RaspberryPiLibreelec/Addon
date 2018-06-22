@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>INKAPELIS GENEROS</title>
- <link>$doregex[regex]</link>
-   
+<title>InkaPelis Generos</title>
+<link>$doregex[regex]</link>
+
 <regex>
 <name>regex</name>
 <listrepeat><![CDATA[
-<SetViewMode>50</SetViewMode>
+<SetViewMode>500</SetViewMode>
 <title>[regex.param2]</title>
 <link>$doregex[makelist]</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
 <expres>class="([^"]+).*?href="https:\/\/www\.inkapelis\.com\/genero\/([^\/]+).*?</expres>
-<page>https://www.inkapelis.com/</page>
+<page>https://www.inkapelis.com</page>
 </regex>
- 
+
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -26,11 +26,11 @@
 <expres>'(.*?)'</expres>
 <page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25''26''27''28''29''30''31''32''33''34''35''36''37''38''39''40''41''42''43''44''45''46''47''48''49''50''51''52''53''54''55''56''57''58''59''60'</page>
 </regex>
- 
+
 <regex>
 <name>regex1</name>
 <listrepeat><![CDATA[
-<SetViewMode>50</SetViewMode>
+<SetViewMode>500</SetViewMode>
 <title>[regex1.param3] - [regex1.param1]</title>
 <link>$doregex[regex2]</link>
 <genre>[regex.param2]</genre>
@@ -41,11 +41,11 @@
 <expres>(?s)class="poster-media-card([^"]+).*?a href="([^"]+).*?title="([^"]+).*?src="([^"]+).*?</expres>
 <page>https://www.inkapelis.com/genero/[regex.param2]/page/[makelist.param1]/</page>
 </regex>
- 
+
 <regex>
 <name>regex2</name>
 <listrepeat><![CDATA[
-<SetViewMode>50</SetViewMode>
+<SetViewMode>500</SetViewMode>
 <title>[regex1.param3]</title>
 <urlsolve>[regex2.param2]</urlsolve>
 <thumbnail>[regex1.param4]</thumbnail>
@@ -54,5 +54,5 @@
 <expres>(?s)class="dlmt">([^"]+).*?a href="([^"]+).*?class="trasnparente">([^"]+).*?<\/p></expres>
 <page>[regex1.param2]</page>
 </regex>
- 
+
 </item>
