@@ -55,7 +55,6 @@
 <expres>(?s)class="dlmt">([^"]+).*?a href="([^"]+).*?class="trasnparente">([^<]+).*?<\/p></expres>
 <page>[regex1.param2]</page>
 </regex>
-
 </item>
 
 ------------------
@@ -63,9 +62,11 @@
 <item>
 <title>[COLOR lightsalmon]Locopelis[/COLOR]</title>
 <link>$doregex[lou]</link>
+ 
 <regex>
 <name>lou</name>
 <listrepeat><![CDATA[
+<SetViewMode>500</SetViewMode>
 <title>[COLOR yellow][lou.param1][/COLOR]</title>
 <thumbnail>https://i.imgur.com/7VClmJu.jpg</thumbnail>
 <fanart>https://i.imgur.com/7VClmJu.jpg</fanart>
@@ -80,6 +81,7 @@
  <regex>
 <name>pelis</name>
 <listrepeat><![CDATA[
+<SetViewMode>500</SetViewMode>
 <title>[COLOR turquoise][pelis.param1][/COLOR]</title>
 <link>$doregex[enlaces]</link>
 <thumbnail>[pelis.param3]<thumbnail>
@@ -91,17 +93,8 @@
 
 <regex>
 <name>enlaces</name>
-<expres><![CDATA[(?s)<iframe src="([^"]+).*?]]></expres>
-<page>[pelis.param2]</page>
-</regex>
-<thumbnail>[pelis.param3]<thumbnail>
-<fanart>[pelis.param3]</fanart>
- </item>
-
-<regex>
-<name>enlaces</name>
 <listrepeat><![CDATA[
-<SetViewMode>50</SetViewMode>
+<SetViewMode>500</SetViewMode>
 <title>[pelis.param1]</title>
 <urlsolve>[enlaces.param1]</urlsolve>
 ]]></listrepeat>
@@ -110,4 +103,4 @@
 </regex>
 <thumbnail>[pelis.param3]<thumbnail>
 <fanart>[pelis.param3]</fanart>
- </item>
+</item>
