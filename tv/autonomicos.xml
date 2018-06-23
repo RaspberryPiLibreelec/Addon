@@ -105,7 +105,13 @@
 <fanart>[pelis.param3]</fanart>
 </item>
 
- -------------
+ ------------
+ 
  
  <item>
- <regex> <name>sex7</name> <listrepeat><![CDATA[ <title>*[COLOR white][sex7.param4] [COLOR red]+18[/COLOR]</title> <thumbnail>[sex7.param2]</thumbnail> <fanart>[sex7.param2]</fanart> <link>$doregex[sex1]</link> ]]></listrepeat> <expres><![CDATA[(?s)class="entry-thumb"([^"]+).*?([^"]+).*?<a href="([^"]+).*?rel="bookmark" title="([^"]+).*?]]></expres> <page>https://ipornogratis.xxx[sex8.param2]</page> <referer>https://www.xvideos.com/</referer> <setcookie>beget=begetok</setcookie> </regex> <regex> <name>sex1</name> <expres><![CDATA[(?s)html5player.setVideoUrlLow\('([^']+).*?]]></expres> <page>https://flashservice$doregex[sex4]</page> <referer>https://www.xvideos.com/</referer> <setcookie>beget=begetok</setcookie> </regex> <regex> <name>sex4</name> <expres><![CDATA[(?s)src="https://flashservice([^"]+).*?]]></expres> <page>[sex7.param3]</page> <referer>https://www.xvideos.com/</referer> <setcookie>beget=begetok</setcookie> </regex> <thumbnail>http://www.rebumbionews.com/wp-content/uploads/2014/01/masajes-sensuales-lima-megarelajantes-con-gabriella-masajista_2-600x330.jpg</thumbnail> <fanart>http://www.rebumbionews.com/wp-content/uploads/2014/01/masajes-sensuales-lima-megarelajantes-con-gabriella-masajista_2-600x330.jpg</fanart> </item>
+<regex>
+ <name>sex7</name> 
+<listrepeat><![CDATA[ 
+<title>*[COLOR white][sex7.param4] [COLOR red]+18[/COLOR]</title>
+ <thumbnail>[sex7.param2]</thumbnail> <fanart>[sex7.param2]</fanart> <link>$doregex[sex1]</link> ]]></listrepeat> <expres><![CDATA[(?s)class="entry-thumb"([^"]+).*?([^"]+).*?<a href="([^"]+).*?rel="bookmark" title="([^"]+).*?]]></expres> <page>https://ipornogratis.xxx[sex8.param2]</page> <referer>https://www.xvideos.com/</referer> <setcookie>beget=begetok</setcookie> </regex> <regex> <name>sex1</name> <expres><![CDATA[(?s)html5player.setVideoUrlLow\('([^']+).*?]]></expres> <page>https://flashservice$doregex[sex4]</page> <referer>https://www.xvideos.com/</referer> <setcookie>beget=begetok</setcookie> </regex> <regex> <name>sex4</name> <expres><![CDATA[(?s)src="https://flashservice([^"]+).*?]]></expres> <page>[sex7.param3]</page> <referer>https://www.xvideos.com/</referer> <setcookie>beget=begetok</setcookie> </regex> <thumbnail>http://www.rebumbionews.com/wp-content/uploads/2014/01/masajes-sensuales-lima-megarelajantes-con-gabriella-masajista_2-600x330.jpg</thumbnail> <fanart>http://www.rebumbionews.com/wp-content/uploads/2014/01/masajes-sensuales-lima-megarelajantes-con-gabriella-masajista_2-600x330.jpg</fanart> </item>
+ 
