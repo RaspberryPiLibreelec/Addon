@@ -57,3 +57,58 @@
 </regex>
 
 </item>
+
+-------------
+
+<item>
+<title>[COLOR lightsalmon]Locopelis[/COLOR]</title>
+<link>$doregex[lou]</link>
+<regex>
+<name>lou</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow][lou.param1][/COLOR]</title>
+<thumbnail>https://i.imgur.com/7VClmJu.jpg</thumbnail>
+<fanart>https://i.imgur.com/7VClmJu.jpg</fanart>
+<link>$doregex[pelis]</link>
+]]></listrepeat>
+<expres><![CDATA[(?s)<li><a title="([^"']+).*?href="([^"']+).*?]]></expres>
+<page>https://www.locopelis.com/</page>
+<thumbnail>https://i.imgur.com/7VClmJu.jpg</thumbnail>
+<fanart>https://i.imgur.com/7VClmJu.jpg</fanart>
+</regex>
+
+ <regex>
+<name>pelis</name>
+<listrepeat><![CDATA[
+<title>[COLOR turquoise][pelis.param1][/COLOR]</title>
+<link>$doregex[enlaces]</link>
+<thumbnail>[pelis.param3]<thumbnail>
+<fanart>[pelis.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)<h2 class="titpeli bold ico_b">([^<]+).*?<a href="([^"]+).*?<img src="([^"]+).*?]]></expres>
+<page>[lou.param2]</page>
+</regex>
+
+<regex>
+<name>enlaces</name>
+<expres><![CDATA[(?s)<iframe src="([^"]+).*?]]></expres>
+<page>[pelis.param2]</page>
+</regex>
+<thumbnail>[pelis.param3]<thumbnail>
+<fanart>[pelis.param3]</fanart>
+ </item>
+
+<regex>
+<name>enlaces</name>
+<listrepeat><![CDATA[
+<SetViewMode>50</SetViewMode>
+<title>[pelis.param1]</title>
+<urlsolve>[enlaces.param1]</urlsolve>
+]]></listrepeat>
+<expres><![CDATA[(?s)<iframe src="([^"]+).*?]]></expres>
+<page>[pelis.param2]</page>
+</regex>
+<thumbnail>[pelis.param3]<thumbnail>
+<fanart>[pelis.param3]</fanart>
+ </item>
+
