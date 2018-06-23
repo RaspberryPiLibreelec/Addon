@@ -78,7 +78,7 @@
 <fanart>https://i.imgur.com/7VClmJu.jpg</fanart>
 </regex>
 
- <regex>
+<regex>
 <name>pelis</name>
 <listrepeat><![CDATA[
 <SetViewMode>500</SetViewMode>
