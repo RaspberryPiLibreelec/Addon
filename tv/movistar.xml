@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>#0</title>
+<title>Win Sports</title>
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla/5.0</link>
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://vergol.com/live/plus1.php</page>
-<referer>http://vercanalestv.com/tv/nacionales/canal-plus-1.php</referer>
+<page>http://vergol.com/live/win-sports.php</page>
+<referer>http://vercanalestv.com/tv/colombia/win-sports.html</referer>
 </regex>
-<thumbnail>https://s18.postimg.cc/4vabhtjqx/cero.png</thumbnail>
-<fanart>https://s18.postimg.cc/kvp4paatl/fondocanalestv.jpg</fanart>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>RCN</title>
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla/5.0</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://vergol.com/live/rcn.php</page>
+<referer>http://vercanalestv.com/tv/colombia/rcn.html</referer>
+</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
 </item>
 
 <item>
