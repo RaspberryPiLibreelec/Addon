@@ -57,7 +57,7 @@
 </regex>
 </item>
 
-------------------
+
 
 <item>
 <title>[COLOR lightsalmon]Locopelis[/COLOR]</title>
@@ -105,69 +105,21 @@
 <fanart>[pelis.param3]</fanart>
 </item>
 
- ------------
- 
+
+
 <item>
-<title>[COLOR lime]Canal Nereo[/COLOR]</title>
-<link>nolink</link>
-<jsonrpc>plugin://plugin.video.youtube/channel/UCH4cb8IIJmqnRTiz06l60RA/</jsonrpc>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
- 
-
- 
-<item>
-
-<title>[COLOR white]Kodi Español y Kodi Latino con Nereo[/COLOR]</title>
-<link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[COLOR white][makelist.param1][/COLOR]</title>
-<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
-<thumbnail>https://i.ytimg.com/vi/[makelist.param2]/hqdefault.jpg</thumbnail>
-<fanart>https://yt3.ggpht.com/-UO0xuh1LWMI/AAAAAAAAAAI/AAAAAAAAAAA/qAoD8rKP_j4/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</fanart>
-]]></listrepeat>
-<expres>title="(.*?)".*?watch\?v=(.*?)[",&amp;]</expres>
-<page>https://www.youtube.com/channel/UCH4cb8IIJmqnRTiz06l60RA</page>
-</regex>
-
-<thumbnail></thumbnail>
-<fanart></fanart>
-
-</item>
- 
- <item>
-
 <title>[COLOR white]Jose Alfonso Hernando[/COLOR]</title>
-<link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[COLOR white][makelist.param1][/COLOR]</title>
-<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
-<thumbnail>https://i.ytimg.com/vi/[makelist.param2]/hqdefault.jpg</thumbnail>
-<fanart></fanart>
-]]></listrepeat>
-<expres>title="(.*?)".*?watch\?v=(.*?)[",&amp;]</expres>
-<page>https://www.youtube.com/user/valdeandemagico</page>
-</regex>
-
+<link>nolink</link>
+<jsonrpc>plugin://plugin.video.youtube.com/user/valdeandemagico</jsonrpc>
 <thumbnail></thumbnail>
 <fanart></fanart>
-
 </item>
- 
- 
- 
-<item>
 
+
+
+<item>
 <title>[COLOR white]Curso Python desde 0.[/COLOR]</title>
 <link>$doregex[makelist]</link>
-
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -180,8 +132,6 @@
 <page>https://www.youtube.com/watch?v=G2FCfQj-9ig&amp;list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS</page>
 <cookieJar></cookieJar>
 </regex>
-
 <thumbnail></thumbnail>
 <fanart></fanart>
-
 </item>
