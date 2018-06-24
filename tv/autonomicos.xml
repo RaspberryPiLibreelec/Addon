@@ -164,6 +164,25 @@
 </item>
  
 <item>
+<title>[COLOR white]Jose Alfonso Hernando[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+<thumbnail>https://i.ytimg.com/vi/[makelist.param2]/hqdefault.jpg</thumbnail>
+<fanart>https://i.ytimg.com/vi/[makelist.param2]/hqdefault.jpg</fanart>
+]]></listrepeat>
+<expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
+<jsonrpc>plugin://plugin.video.youtube/user/valdeandemagico/</jsonrpc>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+ 
+<item>
 <title>[COLOR white]Chemtrails Galicia Geoingenieria y Conspiraciones[/COLOR]</title>
 <link>nolink</link>
 <jsonrpc>plugin://plugin.video.youtube/channel/UCvjqfH7LrsBybZ0hgflRLJg/</jsonrpc>
