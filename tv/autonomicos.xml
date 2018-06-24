@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>#0</title>
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla/5.0</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://vergol.com/live/plus1.php</page>
-<referer>http://vercanalestv.com/tv/nacionales/canal-plus-1.php</referer>
-</regex>
-<thumbnail>https://s18.postimg.cc/4vabhtjqx/cero.png</thumbnail>
-<fanart>https://s18.postimg.cc/kvp4paatl/fondocanalestv.jpg</fanart>
-</item>
-
-<item>
 <title>InkaPelis Generos</title>
 <link>$doregex[regex]</link>
 
