@@ -108,18 +108,20 @@
  ------------
  
 <item>
-<title>[COLOR yellow]+[/COLOR][COLOR white]CURSO DE ALEMÁN[/COLOR]</title>
+<title>[COLOR white]CURSO DE ALEMÁN[/COLOR]</title>
 <link>$doregex[makelist]</link>
-<regex><name>makelist</name>
+
+<regex>
+<name>makelist</name>
 <listrepeat><![CDATA[
 <title>[COLOR yellow]+[/COLOR][COLOR white][makelist.param1][/COLOR]</title>
 <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
-<thumbnail>https://i.ytimg.com/vi/[makelist.param2]/hqdefault.jpg</thumbnail>--->ESTE THUMBNAIL PILLA LA IMAGEN DE CADA VIDEO.
+<thumbnail>https://i.ytimg.com/vi/[makelist.param2]/hqdefault.jpg</thumbnail>
 <fanart>FOTO DE FONDO FORMATO 1080X720 JPG O PNG</fanart>
 ]]></listrepeat>
 <expres>title="(.*?)".*?watch\?v=(.*?)[",&amp;]</expres>
-<page>https://www.youtube.com/channel/UCuwqEnIiwCXSC9vM9VPx2Kg</page> ------>PARA CANALES ENTERO
-</regex>
+<page>https://www.youtube.com/channel/UCuwqEnIiwCXSC9vM9VPx2Kg</page>
+
 <thumbnail>IMAGEN PEQUEÑA FORMATO 512X512 JPG O PNG </thumbnail>
 <fanart>FOTO DE FONDO FORMATO 1080X720 JPG O PNG</fanart>
 </item>
