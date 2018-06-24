@@ -108,6 +108,16 @@
  ------------
  
 <item>
+<title>[COLOR lime]Canal Nereo[/COLOR]</title>
+<link>nolink</link>
+<jsonrpc>plugin://plugin.video.youtube/channel/UCH4cb8IIJmqnRTiz06l60RA/</jsonrpc>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+ 
+
+ 
+<item>
 
 <title>[COLOR white]Kodi Español y Kodi Latino con Nereo[/COLOR]</title>
 <link>$doregex[makelist]</link>
