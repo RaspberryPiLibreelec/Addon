@@ -158,14 +158,8 @@
 <jsonrpc>plugin://plugin.video.youtube/user/RIMBEL35/</jsonrpc>
 </item>
 
- <item>
+<item>
 <title>[COLOR white]Juguetes Toys[/COLOR]</title>
 <link>nolink</link>
 <jsonrpc>plugin://plugin.video.youtube/channel/UCvpZjspm7S2MTWBy7D-OQ0A/</jsonrpc>
-</item>
- 
- <item>
-<title>[COLOR white]Juguetes Toys[/COLOR]</title>
-<link>nolink</link>
-<jsonrpc>plugin://plugin.video.youtube/channel/UCvpZjspm7S2MTWBy7D-OQ0A</jsonrpc>
 </item>
