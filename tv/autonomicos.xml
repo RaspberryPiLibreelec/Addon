@@ -105,19 +105,8 @@
 <fanart>[pelis.param3]</fanart>
 </item>
 
-
-
-<item>
-<title>[COLOR white]Jose Alfonso Hernando[/COLOR]</title>
-<link>nolink</link>
-<jsonrpc>plugin://plugin.video.youtube.com/user/valdeandemagico</jsonrpc>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
  
-
-
-
+ 
 <item>
 <title>[COLOR white]Curso Python desde 0.[/COLOR]</title>
 <link>$doregex[makelist]</link>
@@ -136,7 +125,16 @@
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>
- 
+
+
+ <item>
+<title>[COLOR lime]Canal Nereo[/COLOR]</title>
+<link>nolink</link>
+<jsonrpc>plugin://plugin.video.youtube/channel/UCH4cb8IIJmqnRTiz06l60RA/</jsonrpc>
+</item>
+
+
+
 <item>
 <title>[COLOR white]Kodi Español y Kodi Latino con Nereo[/COLOR]</title>
 <link>$doregex[makelist]</link>
@@ -150,19 +148,10 @@
 <fanart>https://i.ytimg.com/vi/[makelist.param2]/hqdefault.jpg</fanart>
 ]]></listrepeat>
 <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
-<jsonrpc>plugin://plugin.video.youtube/channel/UCH4cb8IIJmqnRTiz06l60RA/</jsonrpc
+<jsonrpc>plugin://plugin.video.youtube/channel/UCH4cb8IIJmqnRTiz06l60RA/</jsonrpc>
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
-
-
- <item>
-<title>[COLOR white]Kodi Español y Kodi Latino con Nereo[/COLOR]</title>
-<link>nolink</link>
-<jsonrpc>plugin://plugin.video.youtube.com/channel/UCH4cb8IIJmqnRTiz06l60RA/</jsonrpc>
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>
