@@ -138,8 +138,9 @@
 </item>
  
 <item>
-<title>[COLOR white]KODI ESPAÑOL Y KODI LATINO CON NEREO[/COLOR]</title>
+<title>[COLOR white]Kodi Español y Kodi Latino con Nereo[/COLOR]</title>
 <link>$doregex[makelist]</link>
+
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -149,11 +150,14 @@
 <fanart>https://i.ytimg.com/vi/[makelist.param2]/hqdefault.jpg</fanart>
 ]]></listrepeat>
 <expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
-<jsonrpc>plugin://plugin.video.youtube/channel/UCH4cb8IIJmqnRTiz06l60RA/</jsonrpc
+<jsonrpc>plugin://plugin.video.youtube/channel/UCH4cb8IIJmqnRTiz06l60RA</jsonrpc>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>https://i.imgur.com/I97Irh6.png</thumbnail>
-<fanart>https://i.imgur.com/VwZ1eTr.jpg</fanart>
+
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
 
  <item>
 <title>[COLOR white]Kodi Español y Kodi Latino con Nereo[/COLOR]</title>
