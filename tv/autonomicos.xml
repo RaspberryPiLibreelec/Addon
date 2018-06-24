@@ -121,7 +121,7 @@
 <fanart>https://yt3.ggpht.com/-UO0xuh1LWMI/AAAAAAAAAAI/AAAAAAAAAAA/qAoD8rKP_j4/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</fanart>
 ]]></listrepeat>
 <expres>title="(.*?)".*?watch\?v=(.*?)[",&amp;]</expres>
-<page>https://www.youtube.com/channel/UCH4cb8IIJmqnRTiz06l60RA/videos</page>
+<page>https://www.youtube.com/channel/UCH4cb8IIJmqnRTiz06l60RA</page>
 </regex>
 
 <thumbnail></thumbnail>
