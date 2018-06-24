@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
+<title>FOX SPORT 1</title>
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla/5.0</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://cinestrenostv.tv/canales/deportes/foxsports.php</page>
+<referer>https://telerium.tv/embed/26212.html</referer>
+</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
 <title>Win Sports</title>
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla/5.0</link>
 <regex>
