@@ -105,8 +105,14 @@
 <fanart>[pelis.param3]</fanart>
 </item>
 
- 
- 
+
+
+<item>
+<title>[COLOR white]pildorasinformaticas[/COLOR]</title>
+<link>nolink</link>
+<jsonrpc>plugin://plugin.video.youtube/channel/UCdulIs-x_xrRd1ezwJZR9ww/</jsonrpc>
+</item>
+
 <item>
 <title>[COLOR white]Curso Python desde 0.[/COLOR]</title>
 <link>$doregex[makelist]</link>
@@ -125,8 +131,6 @@
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>
-
-
 
 <item>
 <title>[COLOR white]Mundo Desconocido[/COLOR]</title>
