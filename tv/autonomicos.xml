@@ -154,3 +154,11 @@
 </regex>
 <thumbnail>https://i.imgur.com/I97Irh6.png</thumbnail>
 <fanart>https://i.imgur.com/VwZ1eTr.jpg</fanart>
+
+ <item>
+<title>[COLOR white]Kodi Español y Kodi Latino con Nereo[/COLOR]</title>
+<link>nolink</link>
+<jsonrpc>plugin://plugin.video.youtube.com/channel/UCH4cb8IIJmqnRTiz06l60RA</jsonrpc>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
