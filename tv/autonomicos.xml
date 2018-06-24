@@ -164,7 +164,7 @@
 <thumbnail>https://i.ytimg.com/vi/[makelist.param2]/hqdefault.jpg</thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
-<expres></expres>
+<expres>data-video-title="(.*?)".*?\n.*?\n.*?\n.*?\n.*?&lt;a href="\/watch\?v=(.*?)&amp;</expres>
 <page>https://www.youtube.com/watch?v=G2FCfQj-9ig&amp;list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS</page>
 <cookieJar></cookieJar>
 </regex>
