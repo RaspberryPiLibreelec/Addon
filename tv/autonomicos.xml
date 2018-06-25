@@ -1,43 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>FOX SPORT 1</title>
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla/5.0</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>https://telerium.tv/embed/26212.html</page>
-<referer>http://cinestrenostv.tv/canales/deportes/foxsports.php</referer>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
+<title>Pelisplanet Generos</title>
+<link>$doregex[regex]</link>
 
-<item>
-<title>WIN SPORTS</title>
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla/5.0</link>
 <regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://www.playerfs.com/hembedplayer/43t56436g/2/650/400</page>
-<referer>http://www.vertelevisor.com/ver-win-sports-en-vivo-gratis-online-por-internet/</referer>
-</regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<SetViewMode>500</SetViewMode>
+<title>[regex.param1]</title>
+<link>$doregex[makelist]</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
-</item>
+]]></listrepeat>
+<expres>generos/"> ([^"]+).*?</expres>
+<page>http://www.pelisplanet.com/</page>
+</regex>
 
-<!-- <item>
-<title>WIN SPORTS</title>
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla/5.0</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://www.playerfs.com/hembedplayer/43t56436g/2/650/400</page>
-<referer>http://www.vertelevisor.com/ver-win-sports-en-vivo-gratis-online-por-internet/</referer>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item> -->
+</item>
 
 <item>
 <title>RCN</title>
