@@ -13,9 +13,10 @@
 <thumbnail></thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
-<expres>generos/"> ([^"]+).*?</expres>
-<page>http://www.pelisplanet.com/</page>
+<expres>" title="([^"]+).*?"><img</expres>
+<page>http://www.pelisplanet.com/generos/</page>
 </regex>
+
 
 </item>
 
