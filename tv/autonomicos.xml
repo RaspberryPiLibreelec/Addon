@@ -13,6 +13,19 @@
 <fanart></fanart>
 </item>
 
+<!-- <item>
+<title>WIN SPORTS</title>
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla/5.0</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://www.playerfs.com/hembedplayer/43t56436g/2/650/400</page>
+<referer>http://www.vertelevisor.com/ver-win-sports-en-vivo-gratis-online-por-internet/</referer>
+</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item> -->
+
 <item>
 <title>RCN</title>
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla/5.0</link>
