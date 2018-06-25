@@ -13,7 +13,7 @@
 <thumbnail></thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
-<expres>" title="([^"]+).*?"></expres>
+<expres>" title="([^"]+).*?"</expres>
 <page>http://www.pelisplanet.com/generos/</page>
 </regex>
 
