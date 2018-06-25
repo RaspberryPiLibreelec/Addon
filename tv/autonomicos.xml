@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>Pelisplanet Generos</title>
+
+<title>PelisPlanet Generos</title>
 <link>$doregex[regex]</link>
 
 <regex>
@@ -10,14 +11,15 @@
 <SetViewMode>500</SetViewMode>
 <title>[regex.param1]</title>
 <link>$doregex[makelist]</link>
-<thumbnail></thumbnail>
-<fanart></fanart>
+<thumbnail>http://www.pelisplanet.com/wp-content/uploads/2016/10/[regex.param2]</thumbnail>
+<fanart>http://www.pelisplanet.com/wp-content/uploads/2016/10/[regex.param2]</fanart>
 ]]></listrepeat>
-<expres>" title="([^"]+).*?"><([^"]+).*?</expres>
-<page>http://www.pelisplanet.com/generos/</page>
+<expres>/" title="([^\/]+).*?"> <img src="http://www.pelisplanet.com/wp-content/uploads/2016/10/([^\/]+).*?" height="60px"></a></expres>
+<page>http://www.pelisplanet.com/genero/</page>
 </regex>
 
-
+ 
+ 
 </item>
 
 <item>
