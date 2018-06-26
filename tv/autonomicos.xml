@@ -13,7 +13,8 @@
 <thumbnail>[regex.param3]</thumbnail>
 <fanart>[regex.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[<a href="([^"]+)" title="([^"]+)"><img src="([^"]+)]]></expres>
+<expres><![CDATA[<div class="todos">
+<a href="([^"]+).*?" title="([^"]+).*?"><img src="([^"]+).*?]]></expres>
 <page>http://www.pelisplanet.com/genero/</page>
 </regex>
 
