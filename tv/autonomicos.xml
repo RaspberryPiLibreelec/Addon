@@ -7,14 +7,16 @@
 <link>$doregex[regex]</link>
 
 <regex>
-<name>makelist</name>
+<name>regex</name>
 <listrepeat><![CDATA[
 <SetViewMode>500</SetViewMode>
-<title>[makelist.param1]</title>
-<link>$doregex[regex1]</link>
+<title>[regex.param2]</title>
+<link>$doregex[regex.param1]</link>
+<thumbnail>[regex.param3]</thumbnail>
+<fanart>[regex.param3]</fanart>
 ]]></listrepeat>
-<expres>title="([^"]+).*?" href="([^"]+).*?">([^"]+).*?</expres>
-<page>http://www.pelisplanet.com/genero/adolecentes/page/[makelist.param3]</page>
+<expres><![CDATA[<a href="([^"]+)" title="([^"]+)"><img src="([^"]+)]]></expres>
+<page>http://www.pelisplanet.com/genero/</page>
 </regex>
 
 <regex>
