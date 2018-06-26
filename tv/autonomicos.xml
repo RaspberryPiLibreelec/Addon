@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-
-<item>
-<title>PelisPlanet Generos</title>
+<title>[COLOR white]PelisPlanet Generos[/COLOR]</title>
 <link>$doregex[regex]</link>
+
 <regex>
 <name>regex</name>
 <listrepeat><![CDATA[
 <SetViewMode>500</SetViewMode>
-<title>[regex.param2]</title>
-<link>$doregex[regex.param1]</link>
+<title>[COLOR white][regex.param2][/COLOR]</title>
+<link>$doregex[regex1]</link>
 <thumbnail>[regex.param3]</thumbnail>
 <fanart>[regex.param3]</fanart>
 ]]></listrepeat>
@@ -18,6 +17,45 @@
 <page>http://www.pelisplanet.com/genero/</page>
 </regex>
 
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<SetViewMode>500</SetViewMode>
+<title>[COLOR white][regex1.param5][/COLOR]</title>
+<link>$doregex[regex1.param1]</link>
+<thumbnail>[regex1.param4]<thumbnail>
+<fanart>[regex1.param4]</fanart>
+]]></listrepeat>
+<expres><![CDATA[<a href="([^"]+).*?" class="browse-movie-link" >
+              <div class="browse-movie-link-qd" >
+                  Hd 1080p                </div>
+                <div class="browse-movie-link-rating">
+                  <span class="icon-star"></span> 6.5                </div>
+                <div class="browse-movie-link-ano">
+                  <p>
+                    2018                  </p>
+                </div>
+                <div class="browse-movie-link-info">
+                  <h2 class="info-title one-line">Alex Strangelove</h2>
+                  <div class="browse-movie-link-poster-title">
+                    <span class="info-title-category">• Adolecentes</span>
+                  </div>
+                </div>
+                <div class="browse-movie-link-audio">
+                    
+                          <img src="([^"]+).*?" title="([^"]+).*?">
+  
+                            
+                                              </div>
+                <figure>
+                  <div class="">
+                  </div>
+                  <img class="img-responsive" src="([^"]+).*?" alt="([^"]+).*?]]></expres>
+<page>[regex.param1]</page>
+</regex>
+
+
+ 
 </item>
 
 <item>
