@@ -11,7 +11,7 @@
 <listrepeat><![CDATA[
 <SetViewMode>500</SetViewMode>
 <title>[regex.param2]</title>
-<link>$doregex[regex.param1]</link>
+<link>$doregex[regex1]</link>
 <thumbnail>[regex.param3]</thumbnail>
 <fanart>[regex.param3]</fanart>
 ]]></listrepeat>
