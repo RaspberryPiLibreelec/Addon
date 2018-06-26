@@ -22,7 +22,7 @@
 <listrepeat><![CDATA[
 <SetViewMode>500</SetViewMode>
 <title>[COLOR white][regex1.param5][/COLOR]</title>
-<link>$doregex[regex1.param1]</link>
+<link>$doregex[regex2]</link>
 <thumbnail>[regex1.param4]<thumbnail>
 <fanart>[regex1.param4]</fanart>
 ]]></listrepeat>
@@ -54,10 +54,23 @@
 <page>[regex.param1]</page>
 </regex>
 
+<regex>
+<name>regex2</name>
+<listrepeat><![CDATA[
+<SetViewMode>500</SetViewMode>
+<title>[COLOR white][regex1.param5][/COLOR]</title>
+<urlsolve>[regex2.param1]</urlsolve>
+]]></listrepeat>
+<expres><![CDATA[style="cursor:pointer; cursor: hand" rel="([^"]+).*?]]></expres>
+<page>[regex1.param1]</page>
+</regex>
+<thumbnail>[regex1.param4]<thumbnail>
+<fanart>[regex1.param4]</fanart>
 
- 
 </item>
 
+  
+  
 <item>
 <title>RCN</title>
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla/5.0</link>
