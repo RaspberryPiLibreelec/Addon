@@ -43,15 +43,17 @@
 <name>regex</name>
 <listrepeat><![CDATA[
 <SetViewMode>500</SetViewMode>
-<title>[regex.param2]</title>
-<link>$doregex[makelist]</link>
+<title>[regex.param4]</title>
+<link>$doregex[regex.param2]</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
-<expres>class="([^"]+).*?href="https:\/\/www\.inkapelis\.com\/genero\/([^\/]+).*?</expres>
+<expres><![CDATA[<li class="cat-item cat-item-([^"]+).*?"><a href="([^"]+).*?" title="([^"]+).*?">([^<]+).*?]]></expres>
 <page>https://www.inkapelis.com/</page>
 </regex>
 
+  </item>
+  
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
