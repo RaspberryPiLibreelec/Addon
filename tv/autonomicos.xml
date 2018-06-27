@@ -7,14 +7,13 @@
 <regex>
 <name>regex</name>
 <listrepeat><![CDATA[
-<SetViewMode>500</SetViewMode>
-<title>[COLOR white][regex.param2][/COLOR]</title>
-<link>$doregex[regex1]</link>
-<thumbnail>[regex.param3]</thumbnail>
-<fanart>[regex.param3]</fanart>
+<title>[COLOR white][regex.param6] [/COLOR]</title>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<link>$doregex[reemplazar]</link>
 ]]></listrepeat>
-<expres><![CDATA[<a href="([^"]+)" title="([^"]+)"><img src="([^"]+)]]></expres>
-<page>http://www.pelisplanet.com/genero/</page>
+<expres><![CDATA[(?s)\["([^"]+).*?,"([^"]+).*?,"([^"]+).*?,"([^"]+).*?,"([^"]+).*?,"([^"]+).*?,"([^"]+).*?,"([^"]+).*?]]></expres>
+<page></page>
 </regex>
 
 <regex>
