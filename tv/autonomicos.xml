@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>[COLOR white]PelisPlanet Generos[/COLOR]</title>
-<link>$doregex[regex]</link>
+<title>[COLOR lightsalmon]Pelis planet[/COLOR]</title>
+<link>$doregex[lou]</link>
 
 <regex>
-<name>regex</name>
+<name>lou</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][regex.param6] [/COLOR]</title>
-<thumbnail></thumbnail>
-<fanart></fanart>
-<link>$doregex[regex1]</link>
+<title>[COLOR yellow][lou.param1][/COLOR]</title>
+<thumbnail>[lou.param2]</thumbnail>
+<fanart>[lou.param2]</fanart>
+<link>$doregex[lou1]</link>
 ]]></listrepeat>
-<expres><![CDATA[(?s)\["([^"]+).*?,"([^"]+).*?,"([^"]+).*?,"([^"]+).*?,"([^"]+).*?,"([^"]+).*?,"([^"]+).*?,"([^"]+).*?]]></expres>
-<page></page>
-</regex>
-
-<regex>
-<name>regex1</name>
-<expres>$pyFunction:('[regex.param8]').replace('online',' ')</expres>
-<page></page>
+<expres><![CDATA[(?s) <span class="info-title-category">([^<']+).*? <img class="img-responsive" src="([^"']+).*?alt="([^"']+).*?]]></expres>
+<page>http://www.pelisplanet.com/</page>
+<thumbnail>https://i.imgur.com/7VClmJu.jpg</thumbnail>
+<fanart>https://i.imgur.com/7VClmJu.jpg</fanart>
 </regex>
 
 </item>
