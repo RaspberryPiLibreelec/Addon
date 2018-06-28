@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
+<item>
+<title>[COLOR white]Win[/COLOR]</title>
+  
 <html>
 <head>
 <title>TV Canales</title>
@@ -62,7 +65,7 @@ Histats.track_hits();} catch(err){};
    </div>
 </body>
 </html>
-
+</item>
 
 
 <item>
