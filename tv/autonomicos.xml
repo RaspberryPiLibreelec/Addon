@@ -39,7 +39,7 @@
 <expres><![CDATA[<img src="([^"]+).*?" alt="([^"]+).*?">
 		<div class="rating"><span class="icon-star2"></span>([^<]+).*?</div>
 						<a href="([^"]+).*?]]></expres>
-<page>http://peliculasdpm.com/genero/[regex.param1]page/[page.param1]/</page>
+<page>http://peliculasdpm.com/genero/[regex.param1]/</page>
 </regex>
 
 <regex>
