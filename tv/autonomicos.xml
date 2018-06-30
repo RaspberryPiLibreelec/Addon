@@ -32,11 +32,13 @@
 <listrepeat><![CDATA[
 <SetViewMode>500</SetViewMode>
 <title>[COLOR white][regex1.param2][/COLOR]</title>
-<link>$doregex[regex2]</link>
-<thumbnail>[regex1.param5]</thumbnail>
-<fanart>[regex1.param5]</fanart>
+<link>$doregex[regex1.param3]</link>
+<thumbnail>[regex1.param1]</thumbnail>
+<fanart>[regex1.param1]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[    ]]></expres>
+<expres><![CDATA[<img src="([^"]+).*?" alt="([^"]+).*?">
+		<div class="rating"><span class="icon-star2"></span> 7.7</div>
+						<a href="([^"]+).*?]]></expres>
 <page>http://peliculasdpm.com/genero/[regex.param1]page/[page.param1]/</page>
 </regex>
 
