@@ -19,11 +19,11 @@
 <regex>
 <name>page</name>
 <listrepeat><![CDATA[
-<title>[COLOR white]Pagina [page.param2][/COLOR]</title>
+<title>Pagina [page.param1]</title>
 <link>$doregex[regex1]</link>
 ]]></listrepeat>
-<expres>href='https://peliculasdpm.com/genero/([^/]+).*?/page/([^/]+).*?</expres>
-<page>href='https://peliculasdpm.com/genero/[regex.param1]</page>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5'</page>
 </regex>
 
 <regex>
