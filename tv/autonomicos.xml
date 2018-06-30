@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>[COLOR white]/Peliculas DPM Generos[/COLOR]</title>
+<title>[COLOR white]Peliculas DPM Generos[/COLOR]</title>
 <link>$doregex[regex]</link>
 
 <regex>
@@ -32,17 +32,28 @@
 <listrepeat><![CDATA[
 <SetViewMode>500</SetViewMode>
 <title>[COLOR white][regex1.param2][/COLOR]</title>
-<link>$doregex[regex1.param3]</link>
+<link>$doregex[regex2]</link>
 <thumbnail>[regex1.param1]</thumbnail>
 <fanart>[regex1.param1]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[<img src="([^"]+).*?" alt="([^"]+).*?">
-		<div class="rating"><span class="icon-star2"></span> 7.7</div>
+		<div class="rating"><span class="icon-star2"></span>([^<]+).*?</div>
 						<a href="([^"]+).*?]]></expres>
 <page>http://peliculasdpm.com/genero/[regex.param1]page/[page.param1]/</page>
 </regex>
 
-
+<regex>
+<name>regex2</name>
+<listrepeat><![CDATA[
+<SetViewMode>500</SetViewMode>
+<title>[regex1.param2]</title>
+<urlsolve>[regex2.param1]</urlsolve>
+<thumbnail>[regex1.param1]</thumbnail>
+<fanart>[regex1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[metaframe rptss" src="([^"]+).*?]]></expres>
+<page>[regex1.param4]</page>
+</regex>
 
 </item>
 
