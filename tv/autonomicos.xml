@@ -9,7 +9,7 @@
 <listrepeat><![CDATA[
 <SetViewMode>500</SetViewMode>
 <title>[COLOR white][regex.param2][/COLOR]</title>
-<link>$doregex[page]</link>
+<link>$doregex[regex1]</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
