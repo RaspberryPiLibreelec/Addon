@@ -7,9 +7,8 @@
 <regex>
 <name>regex</name>
 <listrepeat><![CDATA[
-<SetViewMode>500</SetViewMode>
 <title>[COLOR white][regex.param2][/COLOR]</title>
-<link>$doregex[regex1]</link>
+<link>$doregex[page]</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
@@ -20,17 +19,16 @@
 <regex>
 <name>page</name>
 <listrepeat><![CDATA[
-<title>[COLOR white]Pagina [page.param1][/COLOR]</title>
+<title>[COLOR white]Pagina [page.param2][/COLOR]</title>
 <link>$doregex[regex1]</link>
 ]]></listrepeat>
-<expres>'(.*?)'</expres>
-<page>'1''2''3''4''5'</page>
+<expres>href='https://peliculasdpm.com/genero/([^/]+).*?/page/([^/]+).*?</expres>
+<page>href='https://peliculasdpm.com/genero/[page.param1]</page>
 </regex>
 
 <regex>
 <name>regex1</name>
 <listrepeat><![CDATA[
-<SetViewMode>500</SetViewMode>
 <title>[COLOR white][regex1.param2][/COLOR]</title>
 <link>$doregex[regex2]</link>
 <thumbnail>[regex1.param1]</thumbnail>
@@ -39,13 +37,12 @@
 <expres><![CDATA[<img src="([^"]+).*?" alt="([^"]+).*?">
 		<div class="rating"><span class="icon-star2"></span>([^<]+).*?</div>
 						<a href="([^"]+).*?]]></expres>
-<page>http://peliculasdpm.com/genero/[regex.param1]/</page>
+<page>http://peliculasdpm.com/genero/[regex.param1]page/[page.param1]/</page>
 </regex>
 
 <regex>
 <name>regex2</name>
 <listrepeat><![CDATA[
-<SetViewMode>500</SetViewMode>
 <title>[regex1.param2]</title>
 <urlsolve>[regex2.param1]</urlsolve>
 <thumbnail>[regex1.param1]</thumbnail>
@@ -55,7 +52,12 @@
 <page>[regex1.param4]</page>
 </regex>
 
+<thumbnail>https://peliculasdpm.com/wp-content/uploads/2018/01/peliculasdpmlogo.png</thumbnail>
+<fanart>https://peliculasdpm.com/wp-content/uploads/2018/01/peliculasdpmlogo.png</fanart>
 </item>
+
+</item>
+
 
 <item>
 <title>[COLOR white]PelisPlanet Generos[/COLOR]</title>
