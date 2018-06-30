@@ -23,7 +23,7 @@
 <link>$doregex[regex1]</link>
 ]]></listrepeat>
 <expres>href='https://peliculasdpm.com/genero/([^/]+).*?/page/([^/]+).*?</expres>
-<page>href='https://peliculasdpm.com/genero/[page.param1]</page>
+<page>href='https://peliculasdpm.com/genero/[regex.param1]</page>
 </regex>
 
 <regex>
