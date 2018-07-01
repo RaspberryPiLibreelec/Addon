@@ -2,7 +2,17 @@
 
 <item>
 <title>Cumlouder Categorias</title>
+<link>$doregex[page]</link>
+
+<regex>
+<name>page</name>
+<listrepeat><![CDATA[
+<title>Pagina [page.param1]</title>
 <link>$doregex[regex]</link>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3'</page>
+</regex>
 
 <regex>
 <name>regex</name>
@@ -14,7 +24,7 @@
 ]]></listrepeat>
 <expres><![CDATA[href="/porn-videos/([^"]+).*?\?show=cumlouder" title="([^"]+).*?" onclick="tmClickCategory([^;]+).*?;">
 			<img class="thumb" src="([^"]+).*?]]></expres>
-<page>https://www.cumlouder.com/categories/</page>
+<page>https://www.cumlouder.com/categories/[page.param1]/</page>
 </regex>
 
 <regex>
@@ -44,7 +54,7 @@
 <name>regex2</name>
 <listrepeat><![CDATA[
 <title>[regex1.param2]</title>
-<link>https:[regex2.param1]</link>
+<urlsolve>[regex2.param1]</urlsolve>
 <thumbnail>[regex1.param4]</thumbnail>
 <fanart>[regex1.param4]</fanart>
 ]]></listrepeat>
