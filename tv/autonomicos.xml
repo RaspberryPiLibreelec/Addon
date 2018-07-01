@@ -1,6 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
+<title>Peliculas Pepe Generos</title>
+<link>$doregex[regex]</link>
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<title>[regex.param3]</title>
+<link>$doregex[page]</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[<li class="cat-item cat-item-([^"]+).*?"><a href="https://peliculaspepe.com/([^"]+).*?" >([^<]+).*?]]></expres>
+<page>https://peliculaspepe.com/</page>
+</regex>
+
+<regex>
+<name>page</name>
+<listrepeat><![CDATA[
+<title>Pagina [page.param1]</title>
+<link>$doregex[regex1]</link>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5'</page>
+</regex>
+
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<title>[regex1.param1]</title>
+<link>$doregex[regex2]</link>
+<thumbnail>[regex1.param3]</thumbnail>
+<fanart>[regex1.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[bookmark">([^<]+).*?</a></h2>	</header><!-- .entry-header -->
+
+			<div class="post-thumbnail">
+			<a href="https://peliculaspepe.com/([^"]+).*?">
+				<img width="200" height="300" src="([^"]+).*?]]></expres>
+<page>https://peliculaspepe.com/[regex.param2]page/[page.param1]</page>
+</regex>
+
+<regex>
+<name>regex2</name>
+<listrepeat><![CDATA[
+<title>[regex1.param1]</title>
+<urlsolve>[regex2.param1]</urlsolve>
+<thumbnail>[regex1.param3]</thumbnail>
+<fanart>[regex1.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[ ]]></expres>
+<page>https://peliculaspepe.com/[regex1.param2]</page>
+</regex>
+
+<thumbnail>https://peliculaspepe.com/wp-content/uploads/2018/02/peliculaspepe.jpg</thumbnail>
+<fanart>https://peliculaspepe.com/wp-content/uploads/2018/02/peliculaspepe.jpg</fanart>
+
+</item>
+
+<item>
 <title>Descargar documentales Categorias</title>
 <link>$doregex[regex]</link>
 
