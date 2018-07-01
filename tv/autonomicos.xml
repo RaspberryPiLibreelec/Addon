@@ -8,22 +8,12 @@
 <name>regex</name>
 <listrepeat><![CDATA[
 <title>[regex.param2]</title>
-<link>$doregex[page]</link>
+<link>$doregex[regex1]</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
 <expres><![CDATA[href="https://www.descargardocumentales.net/([^"]+).*?" >([^<]+).*?]]></expres>
 <page>https://www.descargardocumentales.net/</page>
-</regex>
-
-<regex>
-<name>page</name>
-<listrepeat><![CDATA[
-<title>Pagina [page.param1]</title>
-<link>$doregex[regex1]</link>
-]]></listrepeat>
-<expres>'(.*?)'</expres>
-<page>'1''2''3''4''5'</page>
 </regex>
 
 <regex>
@@ -43,12 +33,15 @@
 <listrepeat><![CDATA[
 <title>[regex1.param2]</title>
 <urlsolve>[regex2.param1]</urlsolve>
-<thumbnail>[regex1.param3]</thumbnail>
-<fanart>[regex1.param3]</fanart>
+<thumbnail></thumbnail>
+<fanart></fanart>
 ]]></listrepeat>
 <expres><![CDATA[<iframe src="([^"]+).*?]]></expres>
 <page>https://www.descargardocumentales.net/[regex1.param1]</page>
 </regex>
+
+<thumbnail></thumbnail>
+<fanart></fanart>
 
 </item>
 
