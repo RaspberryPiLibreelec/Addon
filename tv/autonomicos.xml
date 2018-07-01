@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-
 <item>
 <title>Aqui Pelis Categorias</title>
 <link>$doregex[regex]</link>
@@ -53,7 +52,6 @@
 
 <thumbnail>https://aquipelis.net/wp-content/uploads/2018/01/logotipo-aquipelis-camil.jpg</thumbnail>
 <fanart>https://aquipelis.net/wp-content/uploads/2018/01/logotipo-aquipelis-camil.jpg</fanart>
-
 </item>
 
 <item>
