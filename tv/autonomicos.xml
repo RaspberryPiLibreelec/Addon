@@ -37,7 +37,7 @@
 ]]></listrepeat>
 <expres><![CDATA[<a class="muestra-escena" href="([^"]+).*?" title="([^"]+).*?" onclick="tmClickVideo([^;]+).*?;">
         <img class="thumb" src="([^"]+).*?]]></expres>
-<page>https://www.cumlouder.com/porn-videos/[regex.param1]/[page1.param1]/?show=cumlouder</page>
+<page>https://www.cumlouder.com/porn-videos/[regex.param1][page1.param1]/?show=cumlouder</page>
 </regex>
 
 <regex>
