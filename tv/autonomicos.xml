@@ -23,7 +23,7 @@
 <link>$doregex[regex1]</link>
 ]]></listrepeat>
 <expres>'(.*?)'</expres>
-<page>'1''2''3''4''5'</page>
+<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25''26''27''28''29''30''31''32''33''34''35''36''37''38''39''40''41''42''43''44''45''46''47''48''49''50''51''52''53''54''55''56''57''58''59''60''61''62''63''64''65''66''67''68''69''70'</page>
 </regex>
 
 <regex>
@@ -50,13 +50,12 @@
 <thumbnail>[regex1.param3]</thumbnail>
 <fanart>[regex1.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[ ]]></expres>
+<expres><![CDATA[<iframe src='([^']+).*?]]></expres>
 <page>https://peliculaspepe.com/[regex1.param2]</page>
 </regex>
 
 <thumbnail>https://peliculaspepe.com/wp-content/uploads/2018/02/peliculaspepe.jpg</thumbnail>
 <fanart>https://peliculaspepe.com/wp-content/uploads/2018/02/peliculaspepe.jpg</fanart>
-
 </item>
 
 <item>
