@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
+<title>Descargar documentales Categorias</title>
+<link>$doregex[regex]</link>
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<title>[regex.param2]</title>
+<link>$doregex[page]</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[href="https://www.descargardocumentales.net/([^"]+).*?" >([^<]+).*?]]></expres>
+<page>https://www.descargardocumentales.net/</page>
+</regex>
+
+<regex>
+<name>page</name>
+<listrepeat><![CDATA[
+<title>Pagina [page.param1]</title>
+<link>$doregex[regex1]</link>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5'</page>
+</regex>
+
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<title>[regex1.param2]</title>
+<link>$doregex[regex2]</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[class="post-title"><a href="https://www.descargardocumentales.net/([^"]+).*?" title="([^"]+).*?]]></expres>
+<page>https://www.descargardocumentales.net/[regex.param1]page/[page.param1]</page>
+</regex>
+
+<regex>
+<name>regex2</name>
+<listrepeat><![CDATA[
+<title>[regex1.param2]</title>
+<urlsolve>[regex2.param1]</urlsolve>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[<iframe src="([^"]+).*?]]></expres>
+<page>https://www.descargardocumentales.net/[regex1.param1]</page>
+</regex>
+
+<thumbnail>https://descargardocumentales.net/wp-content/uploads/2018/01/logo-1.png</thumbnail>
+<fanart>https://descargardocumentales.net/wp-content/uploads/2018/01/logo-1.png</fanart>
+
+</item>
+
+<item>
 <title>[COLOR white]Peliculas DPM Generos[/COLOR]</title>
 <link>$doregex[regex]</link>
 
