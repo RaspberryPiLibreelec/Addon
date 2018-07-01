@@ -8,12 +8,22 @@
 <name>regex</name>
 <listrepeat><![CDATA[
 <title>[regex.param2]</title>
-<link>$doregex[regex1]</link>
+<link>$doregex[page]</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
 <expres><![CDATA[href="https://www.descargardocumentales.net/([^"]+).*?" >([^<]+).*?]]></expres>
 <page>https://www.descargardocumentales.net/</page>
+</regex>
+
+<regex>
+<name>page</name>
+<listrepeat><![CDATA[
+<title>Pagina [page.param1]</title>
+<link>$doregex[regex1]</link>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5'</page>
 </regex>
 
 <regex>
@@ -25,7 +35,7 @@
 <fanart></fanart>
 ]]></listrepeat>
 <expres><![CDATA[class="post-title"><a href="https://www.descargardocumentales.net/([^"]+).*?" title="([^"]+).*?]]></expres>
-<page>https://www.descargardocumentales.net/[regex.param1]</page>
+<page>https://www.descargardocumentales.net/[regex.param1]page/[page.param1]</page>
 </regex>
 
 <regex>
@@ -40,8 +50,8 @@
 <page>https://www.descargardocumentales.net/[regex1.param1]</page>
 </regex>
 
-<thumbnail></thumbnail>
-<fanart></fanart>
+<thumbnail>https://descargardocumentales.net/wp-content/uploads/2018/01/logo-1.png</thumbnail>
+<fanart>https://descargardocumentales.net/wp-content/uploads/2018/01/logo-1.png</fanart>
 
 </item>
 
