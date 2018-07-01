@@ -1,50 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>[COLOR white]Documania TV[/COLOR]</title>
+<title>Descargar documentales Categorias</title>
 <link>$doregex[regex]</link>
 
 <regex>
 <name>regex</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][regex.param2][/COLOR]</title>
+<title>[regex.param2]</title>
 <link>$doregex[regex1]</link>
-<thumbnail>[regex.param4]</thumbnail>
-<fanart>[regex.param4]</fanart>
+<thumbnail></thumbnail>
+<fanart></fanart>
 ]]></listrepeat>
-<expres><![CDATA[href="https://www.documaniatv.com/([^"]+).*?" title="([^"]+).*?">
-<span class="pm-video-thumb pm-thumb-([^ ]+).*? pm-thumb">
-<div class="pm-thumb-fix pm-thumb-234"><span class="pm-thumb-fix-clip"><img src="([^ ]+).*?]]></expres>
-<page>https://www.documaniatv.com/categorias-y-canales.html</page>
+<expres><![CDATA[href="https://www.descargardocumentales.net/([^"]+).*?" >([^<]+).*?]]></expres>
+<page>https://www.descargardocumentales.net/</page>
 </regex>
 
 <regex>
 <name>regex1</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][regex1.param2][/COLOR]</title>
+<title>[regex1.param2]</title>
 <link>$doregex[regex2]</link>
-<thumbnail>[regex1.param3]<thumbnail>
+<thumbnail>[regex1.param3]</thumbnail>
 <fanart>[regex1.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[<a href="https://www.documaniatv.com/([^"]+).*?" title="([^"]+).*?">
-<div class="pm-video-labels hidden-xs">
-</div>
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlPM0jRW/QAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=" data-echo="([^"]+).*?]]></expres>
-<page>https://www.documaniatv.com/[regex.param1]</page>
+<expres><![CDATA[<a href="https://www.descargardocumentales.net/([^"]+).*?" title="([^"]+).*?"> <img width="400" height="200" src="([^"]+).*?]]></expres>
+<page>https://www.descargardocumentales.net/[regex.param1]</page>
 </regex>
 
 <regex>
 <name>regex2</name>
 <listrepeat><![CDATA[
-<SetViewMode>500</SetViewMode>
-<title>[COLOR white][regex1.param5][/COLOR]</title>
+<title>[regex1.param2]</title>
 <urlsolve>[regex2.param1]</urlsolve>
+<thumbnail>[regex1.param3]</thumbnail>
+<fanart>[regex1.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[style="cursor:pointer; cursor: hand" rel="([^"]+).*?]]></expres>
-<page>[regex1.param1]</page>
+<expres><![CDATA[ ]]></expres>
+<page>https://www.descargardocumentales.net/[regex1.param1]</page>
 </regex>
-<thumbnail>[regex1.param4]<thumbnail>
-<fanart>[regex1.param4]</fanart>
 
 </item>
 
