@@ -165,7 +165,7 @@
 <thumbnail>[regex1.param1]</thumbnail>
 <fanart>[regex1.param1]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[ ]]></expres>
+<expres><![CDATA[<a href="([^"]+).*?]]></expres>
 <page>https://aquipelis.net/[regex1.param3]</page>
 </regex>
 
