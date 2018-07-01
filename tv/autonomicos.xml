@@ -24,7 +24,7 @@
 ]]></listrepeat>
 <expres><![CDATA[href="/porn-videos/([^"]+).*?\?show=cumlouder" title="([^"]+).*?" onclick="tmClickCategory([^;]+).*?;">
 			<img class="thumb" src="([^"]+).*?]]></expres>
-<page>https://www.cumlouder.com/categories/[page.param1]</page>
+<page>https://www.cumlouder.com/categories/[page.param1]/</page>
 </regex>
 
 <regex>
