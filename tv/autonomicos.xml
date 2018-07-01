@@ -21,10 +21,10 @@
 <listrepeat><![CDATA[
 <title>[regex1.param2]</title>
 <link>$doregex[regex2]</link>
-<thumbnail>[regex1.param3]</thumbnail>
-<fanart>[regex1.param3]</fanart>
+<thumbnail></thumbnail>
+<fanart></fanart>
 ]]></listrepeat>
-<expres><![CDATA[<a href="https://www.descargardocumentales.net/([^"]+).*?" title="([^"]+).*?"> <img width="400" height="200" src="([^"]+).*?]]></expres>
+<expres><![CDATA[class="post-title"><a href="https://www.descargardocumentales.net/([^"]+).*?" title="([^"]+).*?]]></expres>
 <page>https://www.descargardocumentales.net/[regex.param1]</page>
 </regex>
 
