@@ -44,7 +44,7 @@
 <name>regex2</name>
 <listrepeat><![CDATA[
 <title>[regex1.param2]</title>
-<urlsolve>https:[regex2.param1]</urlsolve>
+<link>https:[regex2.param1]</link>
 <thumbnail>[regex1.param4]</thumbnail>
 <fanart>[regex1.param4]</fanart>
 ]]></listrepeat>
