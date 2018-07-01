@@ -36,7 +36,7 @@
 <thumbnail>[regex1.param3]</thumbnail>
 <fanart>[regex1.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[ ]]></expres>
+<expres><![CDATA[<iframe src="([^"]+).*?]]></expres>
 <page>https://www.descargardocumentales.net/[regex1.param1]</page>
 </regex>
 
