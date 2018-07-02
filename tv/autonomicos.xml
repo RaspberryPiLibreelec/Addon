@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
+<title>[COLOR white]Avezy[/COLOR]</title>
+<link>$doregex[regex]</link>
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex.param3][regex.param5][/COLOR]</title>
+<link>$doregex[regex.param6]</link>
+<thumbnail>[regex.param1]</thumbnail>
+<fanart>[regex.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[img src="([^"]+).*?" width='24' alt='([^']+).*?' title='([^']+).*?'/>
+  </td>
+	<td><strong>([^<]+).*?</strong><br>([^<]+).*?<br/><div class="btn-group"><a href="([^"]+).*?]]></expres>
+<page>https://avezy.xyz/</page>
+</regex>
+
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR white]Pelis 24[/COLOR]</title>
+<link>$doregex[regex]</link>
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex.param2][/COLOR]</title>
+<link>$doregex[page]</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[<a href="https://pelis24.is/genero/([^"]+).*?">([^<]+).*?]]></expres>
+<page>https://pelis24.is/</page>
+</regex>
+
+<regex>
+<name>page</name>
+<listrepeat><![CDATA[
+<title>[COLOR white]Pagina [page.param1][/COLOR]</title>
+<link>$doregex[regex1]</link>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25''26''27''28''29''30''31''32''33''34''35''36''37''38''39''40''41''42''43''44''45''46''47''48''49''50''51''52''53''54''55''56''57''58''59''60''61''62''63''64''65''66''67''68''69''70'</page>
+</regex>
+
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex1.param2][/COLOR]</title>
+<link>$doregex[regex2]</link>
+<thumbnail>[regex1.param5]</thumbnail>
+<fanart>[regex1.param5]</fanart>
+]]></listrepeat>
+<expres><![CDATA[<a href="https://pelis24.is/pelicula/([^"]+).*?" title="([^"]+).*?"><div class="poster"><div class="title"> <span class="under-title">([^<]+).*?</span></div> <span class="rating"> <i class="glyphicon glyphicon-star"></i><span class="rating-number">([^<]+).*?</span> </span><div class="poster-image-container"> <img width="300" height="428" src="([^"]+).*?]]></expres>
+<page>https://pelis24.is/[regex.param1]page/[page.param1]</page>
+</regex>
+
+<regex>
+<name>regex2</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex1.param2][/COLOR]</title>
+<urlsolve>[regex2.param1]</urlsolve>
+<thumbnail>[regex1.param5]</thumbnail>
+<fanart>[regex1.param5]</fanart>
+]]></listrepeat>
+<expres><![CDATA[ ]]></expres>
+<page>https://pelis24.is/pelicula/[regex1.param1]</page>
+</regex>
+
+<thumbnail>https://pelis24.is/wp-content/uploads/pelis24is.png</thumbnail>
+<fanart>https://pelis24.is/wp-content/uploads/pelis24is.png</fanart>
+</item>
+
+<item>
 <title>[COLOR white]Cinetux[/COLOR]</title>
 <link>$doregex[regex]</link>
 
