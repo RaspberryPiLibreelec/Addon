@@ -524,14 +524,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>generos</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][generos.param3][/COLOR]</title>
+<title>[COLOR white][generos.param1][/COLOR]</title>
 <link>$doregex[paginas]</link>
-<genre>[generos.param3]</genre>
-<info>[COLOR white][generos.param2][/COLOR]</info>
+<genre>[generos.param1]</genre>
+<info>[COLOR white][/COLOR]</info>
 <thumbnail></thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
-<expres><![CDATA[<a href="https://www.inkapelis.com/genero/([^/]+).*?/" title="([^"]+).*?">([^ ]+).*?]]></expres>
+<expres><![CDATA[a href="https://www.inkapelis.com/genero/([^/]+).*?]]></expres>
 <page>https://www.inkapelis.com/</page>
 </regex>
 
@@ -550,7 +550,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR white][peliculas.param2][/COLOR]</title>
 <link>$doregex[enlaces]</link>
-<genre></genre>
+<genre>[generos.param1]</genre>
 <info>[COLOR white][/COLOR]</info>
 <thumbnail>[peliculas.param5]</thumbnail>
 <fanart>[peliculas.param5]</fanart>
@@ -564,7 +564,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR white][enlaces.param1] [enlaces.param3][/COLOR]</title>
 <urlsolve>[enlaces.param2]</urlsolve>
-<genre></genre>
+<genre>[generos.param1]</genre>
 <info>[COLOR white][/COLOR]</info>
 <thumbnail>[peliculas.param5]</thumbnail>
 <fanart>[peliculas.param5]</fanart>
