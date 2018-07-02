@@ -412,22 +412,22 @@
 <fanart>[peliculas.param9]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[">
-            <a href="http://www.pelisplanet.com/([^/]+).*?/" class="browse-movie-link"([^<]+).*?<div class="browse-movie-link-qd" ([^<]+).*?</div>
+            <a href="http://www.pelisplanet.com/([^/]+)/" class="browse-movie-link"([^<]+)<div class="browse-movie-link-qd" ([^<]+)</div>
                 <div class="browse-movie-link-rating">
-                  <span class="icon-star"></span> ([^<]+).*?</div>
+                  <span class="icon-star"></span> ([^<]+)</div>
                 <div class="browse-movie-link-ano">
                   <p>
-                   ([^<]+).*?</p>
+                   ([^<]+)</p>
                 </div>
                 <div class="browse-movie-link-info">
-                  <h2 class="info-title one-line">([^<]+).*?</h2>
+                  <h2 class="info-title one-line">([^<]+)</h2>
                   <div class="browse-movie-link-poster-title">
-                    <span class="info-title-category">• ([^<]+).*?</span>
+                    <span class="info-title-category">• ([^<]+)</span>
                   </div>
                 </div>
                 <div class="browse-movie-link-audio">
                     
-                        ([^<]+).*?<img src="([^"]+).*?]]></expres>
+                        ([^"]+)<img src="([^"]+)]]></expres>
 <page>http://www.pelisplanet.com/genero/[generos.param1]/page/[paginas.param1]</page>
 </regex>
 
