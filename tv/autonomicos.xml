@@ -1,28 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>[COLOR white]Avezy[/COLOR]</title>
-<link>$doregex[regex]</link>
-
-<regex>
-<name>regex</name>
-<listrepeat><![CDATA[
-<title>[COLOR white][regex.param3][regex.param5][/COLOR]</title>
-<link>$doregex[regex.param6]</link>
-<thumbnail>[regex.param1]</thumbnail>
-<fanart>[regex.param1]</fanart>
-]]></listrepeat>
-<expres><![CDATA[img src="([^"]+).*?" width='24' alt='([^']+).*?' title='([^']+).*?'/>
-  </td>
-	<td><strong>([^<]+).*?</strong><br>([^<]+).*?<br/><div class="btn-group"><a href="([^"]+).*?]]></expres>
-<page>https://avezy.xyz/</page>
-</regex>
-
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
-
-<item>
 <title>[COLOR white]Pelis 24[/COLOR]</title>
 <link>$doregex[regex]</link>
 
