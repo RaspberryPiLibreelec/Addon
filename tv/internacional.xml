@@ -28,7 +28,7 @@
 
 <item>
 <title>[COLOR white]Win Sports[/COLOR]</title>       
-<plexus>acestream://3e57b7e5206d645949488550425ce6b36c66f545</plexus>
+<link>acestream://3e57b7e5206d645949488550425ce6b36c66f545</link>
 <thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/internacional/winsports.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
 <info>[COLOR white][/COLOR]</info>
