@@ -2,7 +2,6 @@
 
 <item>
 <title>[COLOR white]Avezy[/COLOR]</title>
-<link>$doregex[regex]</link>
 
 <regex>
 <name>regex</name>
