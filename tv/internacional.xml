@@ -12,7 +12,7 @@
 <thumbnail>https://avezy.xyz/[regex.param3]</thumbnail>
 <fanart>https://avezy.xyz/[regex.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)center'>([^<]+).*?br>([^<]+).*? src="(.*?)".*? title='([^']+).*?br>([^<]+).*?acestream:\/\/(.*?)"]]></expres>
+<expres><![CDATA[(?s)center'>([^<]+).*?br>([^<]+).*? src="(.*?)".*? title='([^']+).*?br>([^<]+).*?acestream:\/\/(.*?)".*?]]></expres>
 <page>https://avezy.xyz/</page>
 </regex>
 
