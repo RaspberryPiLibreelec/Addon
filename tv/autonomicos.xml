@@ -8,39 +8,41 @@
 <name>regex</name>
 <listrepeat><![CDATA[
 <title>[COLOR white][regex.param1] [regex.param2][/COLOR]</title>
-<link>http://ignoreme</link>
+<link>$doregex[regex1]</link>
+<thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
+<fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
 ]]></listrepeat>
-
-<listrepeat><![CDATA[
-<title>· [COLOR white][regex.param3] [regex.param5] [regex.param8] [regex.param10][/COLOR]</title>
-<link>$doregex[regex.param11]</link>
-<thumbnail>https://avezy.xyz/[regex.param6]</thumbnail>
-<fanart>https://avezy.xyz/[regex.param6]</fanart>
-]]></listrepeat>
-
-<expres><![CDATA[" href="#">([^<]+)</a>
+<expres><![CDATA[" href="#">([^<]+).*?</a>
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 		  <ul class="nav navbar-nav navbar-right">
-			<li><a href="#">([^<]+)</a></li>
-			<!--
-			<li><a href="#" id="updater"><span class="glyphicon glyphicon-refresh"></span> Actualizar</a></li>
-			-->
-		  </ul>
-		</div>
-	  </div>
-	</nav>
-
-	<div class="container-fluid bg-3">
-
-		<table class="table table-hober" style="font-size:.8em;">
-		<tr class="warning"><td colspan="2">([^<]+)</td></tr>
-<tr class="" id="row-1">
-	<td align='center'>([^<]+)<br>([^<]+)<br /><img src="([^"]+)" width='24' alt='([^']+)' title='([^']+)'/>
-  </td>
-	<td><strong>([^<]+)</strong><br>([^<]+)<br/><div class="btn-group"><a href="([^"]+)]]></expres>
+			<li><a href="#">([^<]+).*?]]></expres>
 <page>https://avezy.xyz/</page>
 </regex>
+
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex1.param2][/COLOR]</title>
+<link>$doregex[regex2]</link>
+<thumbnail>[regex1.param1]</thumbnail>
+<fanart>[regex1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[img src="([^"]+).*?" width='24' alt='([^']+).*?]]></expres>
+</regex>
+
+<regex>
+<name>regex2</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex2.param1] [regex2.param2][/COLOR]</title>
+<link>$doregex[regex2.param3]</link>
+<thumbnail>[regex1.param1]</thumbnail>
+<fanart>[regex1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[<strong>([^<]+).*?</strong><br>([^<]+).*?<br/><div class="btn-group"><a href="([^"]+).*?]]></expres>
+</regex>
+
+<page>https://avezy.xyz/</page>
 
 </item>
 
