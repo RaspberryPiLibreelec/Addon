@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
+<title>[COLOR white]Avezy[/COLOR]</title>
+<link>$doregex[regex]</link>
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex.param1] [regex.param2][/COLOR]</title>
+<link>$doregex[regex1]</link>
+<thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
+<fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
+]]></listrepeat>
+<expres><![CDATA[a class="navbar-brand" href="#">([^<]+).*?</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#">([^<]+).*?]]></expres>
+<page>https://avezy.xyz/</page>
+</regex>
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex1.param1] [regex1.param2] [regex1.param4][/COLOR]</title>
+<link>$doregex[regex1]</link>
+<thumbnail>[regex1.param3]</thumbnail>
+<fanart>[regex1.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[td align='center'>([^<]+).*?<br>([^<]+).*?<br /><img src="([^"]+).*?" width='24' alt='([^']+).*?]]></expres>
+<page>https://avezy.xyz/</page>
+</regex>
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex1.param1] [regex1.param2] [regex1.param4][/COLOR]</title>
+<link>$doregex[regex1]</link>
+<thumbnail>[regex1.param3]</thumbnail>
+<fanart>[regex1.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[ ]]></expres>
+<page>https://avezy.xyz/</page>
+</regex>
+
+<thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
+<fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
+</item>
+
+<item>
 <title>[COLOR white]Latino Web TV[/COLOR]</title>
 <link>$doregex[regex]</link>
 
