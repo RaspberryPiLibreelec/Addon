@@ -10,6 +10,30 @@
 <name>regex</name>
 <listrepeat><![CDATA[
 <title>[COLOR white][regex.param1] [regex.param2][/COLOR]</title>
+<link>http://</link>
+<thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
+<fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
+]]></listrepeat>
+<expres><![CDATA[" href="#">([^<]+)</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#">([^<]+)]]></expres>
+<page>https://avezy.xyz/</page>
+</regex>
+
+<thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
+<fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
+</item>
+
+<item>
+<title>[COLOR white]Avezy[/COLOR]</title>
+<link>$doregex[regex]</link>
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex.param1] [regex.param2][/COLOR]</title>
 <link>$doregex[regex1]</link>
 <thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
 <fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
