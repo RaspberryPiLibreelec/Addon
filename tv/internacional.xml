@@ -8,7 +8,7 @@
 <name>regex</name>
 <listrepeat><![CDATA[
 <title>[COLOR white][regex.param1] [regex.param2] [regex.param4] [regex.param5][/COLOR]</title>
-<link>plugin://program.plexus/?url=[regex.param7]</link>
+<link>plugin://program.plexus/?url=[regex.param7]&amp;mode=1&amp</link>
 <thumbnail>https://avezy.xyz/[regex.param3]</thumbnail>
 <fanart>https://avezy.xyz/[regex.param3]</fanart>
 ]]></listrepeat>
