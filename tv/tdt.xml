@@ -54,11 +54,11 @@
 <name>regex2</name>
 <listrepeat><![CDATA[
 <title>[COLOR white][regex1.param2][/COLOR]</title>
-<urlsolve>https:[regex2.param1]</urlsolve>
+<link>https:[regex2.param1]</link>
 <thumbnail>[regex1.param4]</thumbnail>
 <fanart>[regex1.param4]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[data-video="([^"]+).*?]]></expres>
+<expres><![CDATA[urlVideo = '([^']+).*?]]></expres>
 <page>https://www.cumlouder.com[regex1.param1]</page>
 </regex>
 
