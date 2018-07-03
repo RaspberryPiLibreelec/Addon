@@ -35,12 +35,16 @@
 <regex>
 <name>regex2</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][regex2.param4][/COLOR]</title>
+<title>[COLOR white][regex2.param3] [regex2.param5] [regex2.param8][/COLOR]</title>
 <link>$doregex[regex3]</link>
-<thumbnail>https://avezy.xyz/[regex2.param3]</thumbnail>
-<fanart>https://avezy.xyz/[regex2.param3]</fanart>
+<thumbnail>https://avezy.xyz/[regex2.param4]</thumbnail>
+<fanart>https://avezy.xyz/[regex2.param4]</fanart>
 ]]></listrepeat>
-<expres><![CDATA['>([^<]+)<br>([^<]+)<br /><img src="([^"]+)" width='24' alt='([^']+)]]></expres>
+<expres><![CDATA["2">([^"]+)</td></tr>
+<tr class="" id="row-1">
+	<td align='center'>([^<]+)<br>([^<]+)<br /><img src="([^"]+)" width='24' alt='([^']+)' title='([^']+)'/>
+  </td>
+	<td><strong>([^<]+)</strong><br>([^<]+)<br/><div class="btn-group"><a href="([^"]+)]]></expres>
 <page>https://avezy.xyz/</page>
 </regex>
 
@@ -48,7 +52,7 @@
 <name>regex3</name>
 <listrepeat><![CDATA[
 <title>[COLOR white][regex2.param4][/COLOR]</title>
-<link>$doregex[regex4]</link>
+<urlsolve>[regex2.param9]</urlsolve>
 <thumbnail>https://avezy.xyz/[regex2.param3]</thumbnail>
 <fanart>https://avezy.xyz/[regex2.param3]</fanart>
 ]]></listrepeat>
