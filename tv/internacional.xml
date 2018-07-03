@@ -12,9 +12,9 @@
 <thumbnail>https://avezy.xyz/[regex.param3]</thumbnail>
 <fanart>https://avezy.xyz/[regex.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA['>([^<]+)<br>([^<]+)<br \/><img src="([^"]+)" width='24' alt='([^']+)' title='([^']+)'\/>
+<expres><![CDATA[(?s)'>([^<']+).*?<br>([^<']+).*?<br \/><img src="([^"']+).*?" width='24' alt='([^'']+).*?' title='([^'']+).*?'\/>
   <\/td>
-	<td><strong>([^<]+)<\/strong><br>([^<]+)<br\/><div class="btn-group"><a href="([^"]+)]]></expres>
+	<td><strong>([^<']+).*?<\/strong><br>([^<']+).*?<br\/><div class="btn-group"><a href="([^"']+).*?]]></expres>
 <page>https://avezy.xyz/</page>
 </regex>
 
