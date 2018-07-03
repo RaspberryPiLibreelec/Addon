@@ -29,6 +29,7 @@
 <fanart>[regex1.param1]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[img src="([^"]+).*?" width='24' alt='([^']+).*?]]></expres>
+<page>https://avezy.xyz/</page>
 </regex>
 
 <regex>
@@ -40,10 +41,11 @@
 <fanart>[regex1.param1]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[<strong>([^<]+).*?</strong><br>([^<]+).*?<br/><div class="btn-group"><a href="([^"]+).*?]]></expres>
+<page>https://avezy.xyz/</page>
 </regex>
 
-<page>https://avezy.xyz/</page>
-
+<thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
+<fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
 </item>
 
 <item>
