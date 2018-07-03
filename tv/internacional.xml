@@ -3,57 +3,51 @@
 <SetViewMode>500</SetViewMode>
 
 <item>
-<title>[COLOR white]Cali TV[/COLOR]</title>       
-<link>http://video.cehis.net/live-calitv/calitv1/playlist.m3u8</link>
-<thumbnail></thumbnail>
-<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
-<info>[COLOR white][/COLOR]</info>
-</item>
+<title>[COLOR white]Avezy[/COLOR]</title>
+<link>$doregex[regex]</link>
 
-<item>
-<title>[COLOR white]RCN[/COLOR]</title>       
-<link>http://mdstrm.com/live-stream-playlist/58a36704896500b908cf1abe.m3u8</link>
-<thumbnail></thumbnail>
-<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
-<info>[COLOR white][/COLOR]</info>
-</item>
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex.param1] [regex.param2][/COLOR]</title>
+<link>$doregex[regex1]</link>
+<thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
+<fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
+]]></listrepeat>
+<expres><![CDATA[" href="#">([^<]+)</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#">([^<]+)]]></expres>
+<page>https://avezy.xyz/</page>
+</regex>
 
-<item>
-<title>[COLOR white]Caracol TV[/COLOR]</title>       
-<urlsolve>https://mediacdn.cumlouder.com/cm/episodio_154/desktop02.mp4?st=FCpIO6ITA1QfTOtc7o67iA&e=1530487599</urlsolve>
-<thumbnail></thumbnail>
-<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
-<info>[COLOR white][/COLOR]</info>
-</item>
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex1.param1] [regex1.param2] [regex1.param4] [regex1.param7][/COLOR]</title>
+<link>$doregex[regex2]</link>
+<thumbnail>https://avezy.xyz/[regex1.param3]</thumbnail>
+<fanart>https://avezy.xyz/[regex1.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA['>([^<]+)<br>([^<]+)<br /><img src="([^"]+)" width='24' alt='([^']+)' title='([^']+)'/>
+  </td>
+	<td><strong>([^<]+)</strong><br>([^<]+)]]></expres>
+<page>https://avezy.xyz/</page>
+</regex>
 
-<item>
-<title>[COLOR white]Win Sports[/COLOR]</title>       
-<link>acestream://3e57b7e5206d645949488550425ce6b36c66f545</link>
-<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/internacional/winsports.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
-<info>[COLOR white][/COLOR]</info>
-</item>
+<regex>
+<name>regex2</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex2.param4] [regex1.param1] [regex1.param2] [regex1.param4] [regex1.param7][/COLOR]</title>
+<urlsolve>[regex2.param5]</urlsolve>
+<thumbnail>https://avezy.xyz/[regex1.param2]</thumbnail>
+<fanart>https://avezy.xyz/[regex1.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[:url([^']+)'([^']+)'([^;]+);">([^<]+)</a><a href="([^"]+)]]></expres>
+<page>https://avezy.xyz/</page>
+</regex>
 
-<item>
-<title>[COLOR white]FOX Sports[/COLOR]</title>       
-<link></link>
-<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/internacional/foxports1.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
-<info>[COLOR white][/COLOR]</info>
-</item>
-
-<item>
-<title>[COLOR white]FOX Sports 2[/COLOR]</title>       
-<link></link>
-<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/internacional/foxports2.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
-<info>[COLOR white][/COLOR]</info>
-</item>
-
-<item>
-<title>[COLOR white]FOX Sports 3[/COLOR]</title>       
-<link></link>
-<thumbnail>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/tv/internacional/foxports3.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/RaspberryPiLibreelec/Addon/master/addon.jpg</fanart>
-<info>[COLOR white][/COLOR]</info>
+<thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
+<fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
 </item>
