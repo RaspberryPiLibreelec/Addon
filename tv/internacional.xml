@@ -7,14 +7,12 @@
 <regex>
 <name>regex</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][regex.param1] [regex.param2] [regex.param4] [regex.param7][/COLOR]</title>
-<urlsolve>[regex.param8]</urlsolve>
+<title>[COLOR white][regex.param1] [regex.param2] [regex.param4] [regex.param5][/COLOR]</title>
+<urlsolve>acestream://[regex.param7]</urlsolve>
 <thumbnail>https://avezy.xyz/[regex.param3]</thumbnail>
 <fanart>https://avezy.xyz/[regex.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)'>([^<']+).*?<br>([^<']+).*?<br \/><img src="([^"']+).*?" width='24' alt='([^'']+).*?' title='([^'']+).*?'\/>
-  <\/td>
-	<td><strong>([^<']+).*?<\/strong><br>([^<']+).*?<br\/><div class="btn-group"><a href="([^"']+).*?]]></expres>
+<expres><![CDATA[(?s)center'>([^<]+).*?br>([^<]+).*? src="(.*?)".*? title='([^']+).*?br>([^<]+).*?AV([^<]+).*?acestream:\/\/(.*?)".*?]]></expres>
 <page>https://avezy.xyz/</page>
 </regex>
 
