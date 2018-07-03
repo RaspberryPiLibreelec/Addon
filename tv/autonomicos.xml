@@ -33,10 +33,10 @@
 </regex>
 
 <regex>
-<name>regex2</name>
+<name>regex</name>
 <listrepeat><![CDATA[
 <title>[COLOR white][regex1.param1] [regex1.param2] [regex1.param4][/COLOR]</title>
-<link>$doregex[regex1]</link>
+<link></link>
 <thumbnail>[regex1.param3]</thumbnail>
 <fanart>[regex1.param3]</fanart>
 ]]></listrepeat>
