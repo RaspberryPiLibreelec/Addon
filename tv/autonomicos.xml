@@ -30,7 +30,19 @@
 ]]></listrepeat>
 <expres><![CDATA[img src="([^"]+).*?" width='24' alt='([^']+).*?' title='([^']+).*?'/>
   </td>
-	<td><strong>([^<]+).*?</strong><br>([^<]+).*?<br/><div class="btn-group"><a href="([^"]+).*?]]></expres>
+	<td><strong>([^<]+).*?</strong><br>([^<]+).*?]]></expres>
+<page>https://avezy.xyz/</page>
+</regex>
+
+<regex>
+<name>regex2</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex1.param2] [regex1.param5][/COLOR]</title>
+<urlsolve>[regex2.param1]</urlsolve>
+<thumbnail>[regex1.param1]</thumbnail>
+<fanart>[regex1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[</a><a href="([^"]+).*?]]></expres>
 <page>https://avezy.xyz/</page>
 </regex>
 
