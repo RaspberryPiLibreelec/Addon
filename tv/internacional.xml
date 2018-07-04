@@ -12,7 +12,7 @@
 <thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
 <fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)" href="#">([^<]+).*?a href="#">(.*?)<]]></expres>
+<expres><![CDATA[(?s)" href="#">([^<]+).*?a href="#">(.*?)<.*?]]></expres>
 <page>https://avezy.xyz/</page>
 </regex>
 
@@ -25,7 +25,7 @@
 <thumbnail>https://avezy.xyz/[regex1.param3]</thumbnail>
 <fanart>https://avezy.xyz/[regex1.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)center'>([^<]+).*?br>([^<]+).*? src="(.*?)".*? title='([^']+).*?br>([^<]+).*?">([^<]+).*?acestream:\/\/(.*?)"]]></expres>
+<expres><![CDATA[(?s)center'>([^<]+).*?br>([^<]+).*? src="(.*?)".*? title='([^']+).*?br>([^<]+).*?">([^<]+).*?acestream:\/\/(.*?)".*?]]></expres>
 <page>https://avezy.xyz/</page>
 </regex>
 
