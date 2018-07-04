@@ -48,7 +48,7 @@
 <thumbnail>https://avezy.xyz/[links.param1]</thumbnail>
 <fanart>https://avezy.xyz/[links.param1]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)url\('([^']+)'\);">([^<]+)<\/a><a href="acestream:\/\/(.*?)".*?]]></expres>
+<expres><![CDATA[(?s)[match.param5].*?url\('([^']+)'\);">([^<]+)<\/a><a href="acestream:\/\/(.*?)".*?]]></expres>
 <page>https://avezy.xyz/</page>
 </regex>
 
