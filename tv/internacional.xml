@@ -15,13 +15,6 @@
 <expres><![CDATA[(?s)" href="#">([^<]+).*?a href="#">(.*?)<.*?]]></expres>
 <page>https://avezy.xyz/</page>
 </regex>
-</item>
-
-
-
-<item>
-<title>[COLOR white]Avezy[/COLOR]</title>
-<link>$doregex[day]</link>
 
 <regex>
 <name>day</name>
