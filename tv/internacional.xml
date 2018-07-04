@@ -8,12 +8,22 @@
 <name>version</name>
 <listrepeat><![CDATA[
 <title>[COLOR white][version.param1] [version.param2][/COLOR]</title>
-<link>https://</link>
+<link>$doregex[day]</link>
 <thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
 <fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
 ]]></listrepeat>
 <expres><![CDATA[(?s)" href="#">([^<]+).*?a href="#">(.*?)<.*?]]></expres>
+<page>https://avezy.xyz/</page>
+</regex>
+</item>
 
+
+
+<item>
+<title>[COLOR white]Avezy[/COLOR]</title>
+<link>$doregex[day]</link>
+
+<regex>
 <name>day</name>
 <listrepeat><![CDATA[
 <title>[COLOR white][day.param1][/COLOR]</title>
@@ -22,7 +32,10 @@
 <fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
 ]]></listrepeat>
 <expres><![CDATA[(?s)colspan="2">(.*?)<.*?]]></expres>
+<page>https://avezy.xyz/</page>
+</regex>
 
+<regex>
 <name>match</name>
 <listrepeat><![CDATA[
 <title>[COLOR white][match.param4] [match.param5] [match.param1] [match.param2][/COLOR]</title>
@@ -31,7 +44,10 @@
 <fanart>https://avezy.xyz/[match.param3]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[(?s)center'>([^<]+).*?br>([^<]+).*? src="(.*?)".*? title='([^']+).*?br>(.*?)<.*?]]></expres>
+<page>https://avezy.xyz/</page>
+</regex>
 
+<regex>
 <name>links</name>
 <listrepeat><![CDATA[
 <title>[COLOR white][match.param4] [match.param5] [match.param1] [match.param2] [links.param1][/COLOR]</title>
@@ -46,7 +62,6 @@
 <thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
 <fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
 </item>
-
 
 <item>
 <title>[COLOR white]Avezy[/COLOR]</title>
