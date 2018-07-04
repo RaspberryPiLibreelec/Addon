@@ -36,7 +36,7 @@
 <thumbnail>https://avezy.xyz/[match.param3]</thumbnail>
 <fanart>https://avezy.xyz/[match.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)[day.param1]center'>([^<]+).*?br>([^<]+).*? src="(.*?)".*? title='([^']+).*?br>(.*?)<.*?]]></expres>
+<expres><![CDATA[[day.param1]center'>([^<]+).*?br>([^<]+).*? src="(.*?)".*? title='([^']+).*?br>(.*?)<.*?]]></expres>
 <page>https://avezy.xyz/</page>
 </regex>
 
