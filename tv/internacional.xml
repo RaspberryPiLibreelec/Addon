@@ -12,11 +12,7 @@
 <thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
 <fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
 ]]></listrepeat>
-<expres><![CDATA[" href="#">([^<]+).*?</a>
-		</div>
-		<div class="collapse navbar-collapse" id="myNavbar">
-		  <ul class="nav navbar-nav navbar-right">
-			<li><a href="#">([^<]+).*?]]></expres>
+<expres><![CDATA[(?s)" href="#">([^<]+).*?a href="#">(.*?)<.*?]]></expres>
 <page>https://avezy.xyz/</page>
 </regex>
 
