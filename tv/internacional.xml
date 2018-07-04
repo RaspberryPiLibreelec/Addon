@@ -43,18 +43,20 @@
 <regex>
 <name>links</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][match.param4] [match.param5] [match.param1] [match.param2] [links.param1][/COLOR]</title>
-<link>plugin://program.plexus/?url=[links.param2]&amp;mode=1&amp;name=</link>
-<thumbnail>https://avezy.xyz/[match.param3]</thumbnail>
-<fanart>https://avezy.xyz/[match.param3]</fanart>
+<title>[COLOR white][match.param4] [match.param5] [match.param1] [match.param2] [links.param2][/COLOR]</title>
+<link>plugin://program.plexus/?url=[links.param3]&amp;mode=1&amp;name=</link>
+<thumbnail>https://avezy.xyz/[links.param1]</thumbnail>
+<fanart>https://avezy.xyz/[links.param1]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)\);">([^<]+)<\/a><a href="acestream:\/\/(.*?)".*?]]></expres>
+<expres><![CDATA[(?s)url\('([^']+)'\);">([^<]+)<\/a><a href="acestream:\/\/(.*?)".*?]]></expres>
 <page>https://avezy.xyz/</page>
 </regex>
 
 <thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
 <fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
 </item>
+
+
 
 <item>
 <title>[COLOR white]Avezy[/COLOR]</title>
