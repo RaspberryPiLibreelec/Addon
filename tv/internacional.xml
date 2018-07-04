@@ -4,6 +4,10 @@
 <title>[COLOR white]Avezy[/COLOR]</title>
 <link>$doregex[version]</link>
 
+<item>
+<title>[COLOR white]Avezy[/COLOR]</title>
+<link>$doregex[version]</link>
+
 <regex>
 <name>version</name>
 <listrepeat><![CDATA[
@@ -36,7 +40,7 @@
 <thumbnail>https://avezy.xyz/[match.param3]</thumbnail>
 <fanart>https://avezy.xyz/[match.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)[day.param1].*?center'>([^<]+).*?br>([^<]+).*? src="(.*?)".*? title='([^']+).*?br>(.*?)<.*?]]></expres>
+<expres><![CDATA[(?s)$doregex[day.param1].*?center'>([^<]+).*?br>([^<]+).*? src="(.*?)".*? title='([^']+).*?br>(.*?)<.*?]]></expres>
 <page>https://avezy.xyz/</page>
 </regex>
 
@@ -48,7 +52,7 @@
 <thumbnail>https://avezy.xyz/[links.param1]</thumbnail>
 <fanart>https://avezy.xyz/[links.param1]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)[match.param5].*?url\('([^']+)'\);">([^<]+)<\/a><a href="acestream:\/\/(.*?)".*?]]></expres>
+<expres><![CDATA[(?s)$doregex[match.param5].*?url\('([^']+)'\);">([^<]+)<\/a><a href="acestream:\/\/(.*?)".*?]]></expres>
 <page>https://avezy.xyz/</page>
 </regex>
 
