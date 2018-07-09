@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
+<item>
+<title>Captcha</title>
+<link>$doregex[regex]</link>
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<title>[COLOR white]Captcha[/COLOR]</title>
+<link>$doregex[regex.param1]</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres>(.*)</expres>
+<page>$pyFunction: unCaptcha.performCaptcha('https://gnula.se/link/3216204',Cookie_Jar,returnpage=True)</page>
+<NOTPlayable>True</NOTPlayable>
+</regex>
+</item>
+
+
 <!--MASTORRENTS-->
 
 <!--PELICULAS-->
