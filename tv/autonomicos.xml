@@ -1,5 +1,627 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
+<!--MASTORRENTS-->
+
+<!--PELICULAS-->
+
+<item>
+<SetViewMode>55</SetViewMode>
+
+<title>[COLOR steelblue]MAS[COLOR white]TORRENTS [COLOR cadetblue] PELICULAS[/COLOR]</title>
+<fanart>https://s20.postimg.cc/gabkwps99/fondo_mastorrent_peliculas.jpg</fanart> 
+<thumbnail>https://s20.postimg.cc/5tvgucydp/mastorrents.png</thumbnail>
+<link>$doregex[paginado]</link>
+
+<regex>
+<name>paginado</name>
+<listrepeat><![CDATA[
+<title>[COLOR darkcyan]Peliculas[COLOR gold] Pagina [COLOR lime][paginado.param1][/COLOR]</title>
+<link>$doregex[regex]</link>
+<fanart></fanart> 
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93',</page>
+</regex>
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR yellow][regex.param6][COLOR orange] -[regex.param7][/COLOR]</title>
+<link>$doregex[regex1]</link>
+<thumbnail>[regex.param3]</thumbnail>
+<fanart>[regex.param3]</fanart>
+]]></listrepeat> 
+<expres><![CDATA[(?s)http://www.mastorrents.com/pelicula([^"]+).*?>([^:]+).*?'([^']+).*?>([^>]+).*?>([^>]+).*?>([^<]+).*?\(([^)]+).*?]]></expres>
+<page>http://www.mastorrents.com/?pPag=[paginado.param1]</page>
+</regex>
+
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title> [COLOR lime][regex.param6][COLOR orange] -[regex.param7][COLOR hotpink] Calidad-[COLOR maroon][regex1.param8][COLOR linen] Peso-[COLOR peru][regex1.param9][/COLOR]</title>
+<link>$doregex[select]</link>
+<thumbnail>[regex.param3]</thumbnail>
+<fanart>[regex.param3]</fanart> 
+]]></listrepeat>
+<expres><![CDATA[(?s)<a href="javascript:showDownload([^,]+).*?,([^,]+).*?,([^h]+).*?([^']+).*?<([^>]+).*?>([^"]+).*?>([^>]+).*?<i>([^<]+).*?<i>([^<]+).*?]]></expres>
+<page>http://www.mastorrents.com/pelicula[regex.param1]</page>
+</regex>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver con:', ['[COLOR yellow]Quasar[/COLOR]', '[COLOR yellow]Torrenter[/COLOR]', '[COLOR yellow]Elementum[/COLOR]', '[COLOR yellow]Torrentin[/COLOR]'])
+    channels = [
+  'plugin://plugin.video.quasar/play?uri=[regex1.param4]&image=imageurl&player=0',
+  'plugin://plugin.video.torrenter/?action=playSTRM&url=[regex1.param4]&image=imageurl&player=0',
+  'plugin://plugin.video.elementum/play?uri=[regex1.param4]&image=imageurl&player=0',
+  'plugin://plugin.video.torrentin/?uri=[regex1.param4]&image=imageurl&player=0']  
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<fanart>https://s20.postimg.cc/6w5ncwwml/fondo_mastorrent_peliculas.jpg</fanart> 
+<thumbnail>https://s20.postimg.cc/5tvgucydp/mastorrents.png</thumbnail>
+
+</item>
+
+<!--BUSCADOR DE PELICULAS-->
+
+<item>
+<SetViewMode>55</SetViewMode>
+
+<title>[COLOR steelblue]MAS[COLOR white]TORRENTS [COLOR cadetblue]BUSCADOR DE PELICULAS[/COLOR]</title>
+<fanart>https://s20.postimg.cc/gabkwps99/fondo_mastorrent_peliculas.jpg</fanart> 
+<thumbnail>https://s20.postimg.cc/piety8lnx/icono_lupa.png</thumbnail>
+<link>$doregex[regex]</link>
+
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR yellow][regex.param6][COLOR orange] -[regex.param7][/COLOR]</title>
+<link>$doregex[regex1]</link>
+<thumbnail>[regex.param3]</thumbnail>
+<fanart>[regex.param3]</fanart>
+]]></listrepeat> 
+<expres><![CDATA[(?s)http://www.mastorrents.com/pelicula([^"]+).*?>([^:]+).*?'([^']+).*?>([^>]+).*?>([^>]+).*?>([^<]+).*?\(([^)]+).*?]]></expres>
+<page>http://www.mastorrents.com/?pTit=$doregex[buscar]</page>
+</regex>
+
+<regex>
+<name>buscar</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Jumanji', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title> [COLOR lime][regex.param6][COLOR orange] -[regex.param7][COLOR hotpink] Calidad-[COLOR maroon][regex1.param8][COLOR linen] Peso-[COLOR peru][regex1.param9][/COLOR]</title>
+<link>$doregex[select]</link>
+<thumbnail>[regex.param3]</thumbnail>
+<fanart>[regex.param3]</fanart> 
+]]></listrepeat>
+<expres><![CDATA[(?s)<a href="javascript:showDownload([^,]+).*?,([^,]+).*?,([^h]+).*?([^']+).*?<([^>]+).*?>([^"]+).*?>([^>]+).*?<i>([^<]+).*?<i>([^<]+).*?]]></expres>
+<page>http://www.mastorrents.com/pelicula[regex.param1]</page>
+</regex>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver con:', ['[COLOR yellow]Quasar[/COLOR]', '[COLOR yellow]Torrenter[/COLOR]', '[COLOR yellow]Elementum[/COLOR]', '[COLOR yellow]Torrentin[/COLOR]'])
+    channels = [
+  'plugin://plugin.video.quasar/play?uri=[regex1.param4]&image=imageurl&player=0',
+  'plugin://plugin.video.torrenter/?action=playSTRM&url=[regex1.param4]&image=imageurl&player=0',
+  'plugin://plugin.video.elementum/play?uri=[regex1.param4]&image=imageurl&player=0',
+  'plugin://plugin.video.torrentin/?uri=[regex1.param4]&image=imageurl&player=0']  
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<fanart>https://s20.postimg.cc/6w5ncwwml/fondo_mastorrent_peliculas.jpg</fanart> 
+<thumbnail>https://s20.postimg.cc/piety8lnx/icono_lupa.png</thumbnail>
+
+</item>
+
+
+<!--SERIES-->
+
+<item>
+<SetViewMode>55</SetViewMode>
+
+<title>[COLOR steelblue]MAS[COLOR white]TORRENTS [COLOR cadetblue] SERIES[/COLOR]</title>
+<fanart>https://s20.postimg.cc/xtzkenozh/fondo_mastorrent_series.jpg</fanart> 
+<thumbnail>https://s20.postimg.cc/5tvgucydp/mastorrents.png</thumbnail>
+<link>$doregex[paginado]</link>
+
+<regex>
+<name>paginado</name>
+<listrepeat><![CDATA[
+<title>[COLOR darkcyan]Series[COLOR gold] Pagina [COLOR lime][paginado.param1][/COLOR]</title>
+<link>$doregex[regex]</link>
+<fanart></fanart> 
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1','2','3','4','5','6','7','8','9','10','11','12','13','14','15',</page>
+</regex>
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR yellow][regex.param5][COLOR orange] Capitulo [COLOR powderblue]- [regex.param7][/COLOR]</title>
+<link>$doregex[regex1]</link>
+<thumbnail>[regex.param2]</thumbnail>
+<fanart>[regex.param2]</fanart>
+]]></listrepeat> 
+<expres><![CDATA[(?s)<a href="http://www.mastorrents.com/serie/(.*?)"[\w\W\s]{0,57}'([^']+).*?>([^"]+).*?>([^"]+).*?tooltipbox">([^<]+).*?>([^;]+).*?tulo([^<]+).*?]]></expres>
+<page>http://www.mastorrents.com/series/?pPag=[paginado.param1]</page>
+</regex>
+
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title> [COLOR lime][regex1.param3][COLOR orange] Episodio [COLOR hotpink]- [regex1.param1][/COLOR]</title>
+<link>$doregex[regex2]</link>
+<thumbnail>[regex.param2]</thumbnail>
+<fanart>[regex.param2]</fanart> 
+]]></listrepeat>
+<expres><![CDATA[(?s)<div class="corner-episode">([^<]+).*?>[\w\W\s]{0,150}<a href="([^"]+).*?>[\w\W\s]{0,200}tooltipbox">([^<]+).*?]]></expres>
+<page>http://www.mastorrents.com/serie/[regex.param1]</page>
+</regex>
+
+<regex>
+<name>regex2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title> [COLOR lime][regex1.param3][COLOR orange] Episodio[COLOR hotpink]-[regex1.param1][COLOR cyan] Calidad[COLOR lavender]-[regex2.param3][/COLOR]</title>
+<link>$doregex[select]</link>
+<thumbnail>[regex.param2]</thumbnail>
+<fanart>[regex.param2]</fanart> 
+]]></listrepeat>
+<expres><![CDATA[(?s)<a href="javascript:showDownload[\w\W\s]{0,70}'([^']+).*?'[\w\W\s]{0,100}"([^t]+).*?torrent([^s]+).*?]]></expres>
+<page>[regex1.param2]</page>
+</regex>
+
+
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver con:', ['[COLOR yellow]Quasar[/COLOR]', '[COLOR yellow]Torrenter[/COLOR]', '[COLOR yellow]Elementum[/COLOR]', '[COLOR yellow]Torrentin[/COLOR]'])
+    channels = [
+  'plugin://plugin.video.quasar/play?uri=[regex2.param1]&image=imageurl&player=0',
+  'plugin://plugin.video.torrenter/?action=playSTRM&url=[regex2.param1]&image=imageurl&player=0',
+  'plugin://plugin.video.elementum/play?uri=[regex2.param1]&image=imageurl&player=0',
+  'plugin://plugin.video.torrentin/?uri=[regex2.param1]&image=imageurl&player=0']  
+    return channels[ret]
+]]></expres>
+<page></page>
+
+<fanart>https://s20.postimg.cc/xtzkenozh/fondo_mastorrent_series.jpg</fanart> 
+<thumbnail>https://s20.postimg.cc/5tvgucydp/mastorrents.png</thumbnail>
+
+</regex>
+
+</item>
+
+<!--BUSCADOR DE SERIES-->
+
+<item>
+<SetViewMode>55</SetViewMode>
+
+<title>[COLOR steelblue]MAS[COLOR white]TORRENTS [COLOR cadetblue]BUSCADOR DE SERIES[/COLOR]</title>
+<fanart>https://s20.postimg.cc/xtzkenozh/fondo_mastorrent_series.jpg</fanart> 
+<thumbnail>https://s20.postimg.cc/piety8lnx/icono_lupa.png</thumbnail>
+<link>$doregex[regex]</link>
+
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR yellow][regex.param5][COLOR orange] Capitulo [COLOR powderblue]- [regex.param7][/COLOR]</title>
+<link>$doregex[regex1]</link>
+<thumbnail>[regex.param2]</thumbnail>
+<fanart>[regex.param2]</fanart>
+]]></listrepeat> 
+<expres><![CDATA[(?s)<a href="http://www.mastorrents.com/serie/(.*?)"[\w\W\s]{0,57}'([^']+).*?>([^"]+).*?>([^"]+).*?tooltipbox">([^<]+).*?>([^;]+).*?tulo([^<]+).*?]]></expres>
+<page>http://www.mastorrents.com/series/?pTit=$doregex[buscar]</page>
+</regex>
+
+<regex>
+<name>buscar</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Serie: ejemplo: Narcos', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title> [COLOR lime][regex1.param3][COLOR orange] Episodio [COLOR hotpink]- [regex1.param1][/COLOR]</title>
+<link>$doregex[regex2]</link>
+<thumbnail>[regex.param2]</thumbnail>
+<fanart>[regex.param2]</fanart> 
+]]></listrepeat>
+<expres><![CDATA[(?s)<div class="corner-episode">([^<]+).*?>[\w\W\s]{0,150}<a href="([^"]+).*?>[\w\W\s]{0,200}tooltipbox">([^<]+).*?]]></expres>
+<page>http://www.mastorrents.com/serie/[regex.param1]</page>
+</regex>
+
+<regex>
+<name>regex2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title> [COLOR lime][regex1.param3][COLOR orange] Episodio[COLOR hotpink]-[regex1.param1][COLOR cyan] Calidad[COLOR lavender]-[regex2.param3][/COLOR]</title>
+<link>$doregex[select]</link>
+<thumbnail>[regex.param2]</thumbnail>
+<fanart>[regex.param2]</fanart> 
+]]></listrepeat>
+<expres><![CDATA[(?s)<a href="javascript:showDownload[\w\W\s]{0,70}'([^']+).*?'[\w\W\s]{0,100}"([^t]+).*?torrent([^s]+).*?]]></expres>
+<page>[regex1.param2]</page>
+</regex>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver con:', ['[COLOR yellow]Quasar[/COLOR]', '[COLOR yellow]Torrenter[/COLOR]', '[COLOR yellow]Elementum[/COLOR]', '[COLOR yellow]Torrentin[/COLOR]'])
+    channels = [
+  'plugin://plugin.video.quasar/play?uri=[regex2.param1]&image=imageurl&player=0',
+  'plugin://plugin.video.torrenter/?action=playSTRM&url=[regex2.param1]&image=imageurl&player=0',
+  'plugin://plugin.video.elementum/play?uri=[regex2.param1]&image=imageurl&player=0',
+  'plugin://plugin.video.torrentin/?uri=[regex2.param1]&image=imageurl&player=0']  
+    return channels[ret]
+]]></expres>
+<page></page>
+
+<fanart>https://s20.postimg.cc/xtzkenozh/fondo_mastorrent_series.jpg</fanart> 
+<thumbnail>https://s20.postimg.cc/piety8lnx/icono_lupa.png</thumbnail>
+
+</regex>
+
+</item>
+
+<!--SERIES HD-->
+
+<item>
+<SetViewMode>55</SetViewMode>
+
+<title>[COLOR steelblue]MAS[COLOR white]TORRENTS [COLOR cadetblue] SERIES HD[/COLOR]</title>
+<fanart>https://s20.postimg.cc/kpu01z4nh/fondo_mastorrent_serieshd.jpg</fanart> 
+<thumbnail>https://s20.postimg.cc/5tvgucydp/mastorrents.png</thumbnail>
+<link>$doregex[paginado]</link>
+
+<regex>
+<name>paginado</name>
+<listrepeat><![CDATA[
+<title>[COLOR darkcyan]Series HD[COLOR gold] Pagina [COLOR lime][paginado.param1][/COLOR]</title>
+<link>$doregex[regex]</link>
+<fanart></fanart> 
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1','2','3','4','5','6','7','8',</page>
+</regex>
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR yellow][regex.param5][COLOR orange] Capitulo [COLOR powderblue]- [regex.param7][/COLOR]</title>
+<link>$doregex[regex1]</link>
+<thumbnail>[regex.param2]</thumbnail>
+<fanart>[regex.param2]</fanart>
+]]></listrepeat> 
+<expres><![CDATA[(?s)<a href="http://www.mastorrents.com/serie/(.*?)"[\w\W\s]{0,57}'([^']+).*?>([^"]+).*?>([^"]+).*?tooltipbox">([^<]+).*?>([^;]+).*?tulo([^<]+).*?]]></expres>
+<page>http://www.mastorrents.com/series/hd?pPag=[paginado.param1]</page>
+</regex>
+
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title> [COLOR lime][regex1.param3][COLOR orange] Episodio [COLOR hotpink]- [regex1.param1][/COLOR]</title>
+<link>$doregex[regex2]</link>
+<thumbnail>[regex.param2]</thumbnail>
+<fanart>[regex.param2]</fanart> 
+]]></listrepeat>
+<expres><![CDATA[(?s)<div class="corner-episode">([^<]+).*?>[\w\W\s]{0,150}<a href="([^"]+).*?>[\w\W\s]{0,200}tooltipbox">([^<]+).*?]]></expres>
+<page>http://www.mastorrents.com/serie/[regex.param1]</page>
+</regex>
+
+<regex>
+<name>regex2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title> [COLOR lime][regex1.param3][COLOR orange] Episodio[COLOR hotpink]-[regex1.param1][COLOR cyan] Calidad[COLOR lavender]-[regex2.param3][/COLOR]</title>
+<link>$doregex[select]</link>
+<thumbnail>[regex.param2]</thumbnail>
+<fanart>[regex.param2]</fanart> 
+]]></listrepeat>
+<expres><![CDATA[(?s)<a href="javascript:showDownload[\w\W\s]{0,70}'([^']+).*?'[\w\W\s]{0,100}"([^t]+).*?torrent([^s]+).*?]]></expres>
+<page>[regex1.param2]</page>
+</regex>
+
+
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver con:', ['[COLOR yellow]Quasar[/COLOR]', '[COLOR yellow]Torrenter[/COLOR]', '[COLOR yellow]Elementum[/COLOR]', '[COLOR yellow]Torrentin[/COLOR]'])
+    channels = [
+  'plugin://plugin.video.quasar/play?uri=[regex2.param1]&image=imageurl&player=0',
+  'plugin://plugin.video.torrenter/?action=playSTRM&url=[regex2.param1]&image=imageurl&player=0',
+  'plugin://plugin.video.elementum/play?uri=[regex2.param1]&image=imageurl&player=0',
+  'plugin://plugin.video.torrentin/?uri=[regex2.param1]&image=imageurl&player=0']  
+    return channels[ret]
+]]></expres>
+<page></page>
+
+<fanart>https://s20.postimg.cc/kpu01z4nh/fondo_mastorrent_serieshd.jpg</fanart> 
+<thumbnail>https://s20.postimg.cc/5tvgucydp/mastorrents.png</thumbnail>
+
+</regex>
+
+</item>
+
+<!--BUSCADOR SERIES HD-->
+
+<item>
+<SetViewMode>55</SetViewMode>
+
+<title>[COLOR steelblue]MAS[COLOR white]TORRENTS [COLOR cadetblue]BUSCADOR SERIES HD[/COLOR]</title>
+<fanart>https://s20.postimg.cc/kpu01z4nh/fondo_mastorrent_serieshd.jpg</fanart> 
+<thumbnail>https://s20.postimg.cc/piety8lnx/icono_lupa.png</thumbnail>
+<link>$doregex[regex]</link>
+
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR yellow][regex.param5][COLOR orange] Capitulo [COLOR powderblue]- [regex.param7][/COLOR]</title>
+<link>$doregex[regex1]</link>
+<thumbnail>[regex.param2]</thumbnail>
+<fanart>[regex.param2]</fanart>
+]]></listrepeat> 
+<expres><![CDATA[(?s)<a href="http://www.mastorrents.com/serie/(.*?)"[\w\W\s]{0,57}'([^']+).*?>([^"]+).*?>([^"]+).*?tooltipbox">([^<]+).*?>([^;]+).*?tulo([^<]+).*?]]></expres>
+<page>http://www.mastorrents.com/series/hd?pTit=$doregex[buscar]</page>
+</regex>
+
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title> [COLOR lime][regex1.param3][COLOR orange] Episodio [COLOR hotpink]- [regex1.param1][/COLOR]</title>
+<link>$doregex[regex2]</link>
+<thumbnail>[regex.param2]</thumbnail>
+<fanart>[regex.param2]</fanart> 
+]]></listrepeat>
+<expres><![CDATA[(?s)<div class="corner-episode">([^<]+).*?>[\w\W\s]{0,150}<a href="([^"]+).*?>[\w\W\s]{0,200}tooltipbox">([^<]+).*?]]></expres>
+<page>http://www.mastorrents.com/serie/[regex.param1]</page>
+</regex>
+
+<regex>
+<name>buscar</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Serie: ejemplo: Narcos', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>regex2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title> [COLOR lime][regex1.param3][COLOR orange] Episodio[COLOR hotpink]-[regex1.param1][COLOR cyan] Calidad[COLOR lavender]-[regex2.param3][/COLOR]</title>
+<link>$doregex[select]</link>
+<thumbnail>[regex.param2]</thumbnail>
+<fanart>[regex.param2]</fanart> 
+]]></listrepeat>
+<expres><![CDATA[(?s)<a href="javascript:showDownload[\w\W\s]{0,70}'([^']+).*?'[\w\W\s]{0,100}"([^t]+).*?torrent([^s]+).*?]]></expres>
+<page>[regex1.param2]</page>
+</regex>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver con:', ['[COLOR yellow]Quasar[/COLOR]', '[COLOR yellow]Torrenter[/COLOR]', '[COLOR yellow]Elementum[/COLOR]', '[COLOR yellow]Torrentin[/COLOR]'])
+    channels = [
+  'plugin://plugin.video.quasar/play?uri=[regex2.param1]&image=imageurl&player=0',
+  'plugin://plugin.video.torrenter/?action=playSTRM&url=[regex2.param1]&image=imageurl&player=0',
+  'plugin://plugin.video.elementum/play?uri=[regex2.param1]&image=imageurl&player=0',
+  'plugin://plugin.video.torrentin/?uri=[regex2.param1]&image=imageurl&player=0']  
+    return channels[ret]
+]]></expres>
+<page></page>
+
+<fanart>https://s20.postimg.cc/kpu01z4nh/fondo_mastorrent_serieshd.jpg</fanart> 
+<thumbnail>https://s20.postimg.cc/piety8lnx/icono_lupa.png</thumbnail>
+</regex>
+</item>
+
+<item>
+<SetViewMode>55</SetViewMode>
+ 
+<title>[COLOR steelblue]MAS[COLOR white]TORRENTS [COLOR cadetblue] PELICULAS[/COLOR]</title>
+<fanart>https://s20.postimg.cc/gabkwps99/fondo_mastorrent_peliculas.jpg</fanart>
+<thumbnail>https://s20.postimg.cc/5tvgucydp/mastorrents.png</thumbnail>
+<link>$doregex[paginado]</link>
+ 
+<regex>
+<name>paginado</name>
+<listrepeat><![CDATA[
+<title>[COLOR darkcyan]Peliculas[COLOR gold] Pagina [COLOR lime][paginado.param1][/COLOR]</title>
+<link>$doregex[regex]</link>
+<fanart></fanart>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93',</page>
+</regex>
+ 
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[regex.param3]</title>
+<link>$doregex[regex1]</link>
+<thumbnail>[regex.param4]</thumbnail>
+<fanart>[regex.param4]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)href="http://www.mastorrents.com/pelicula/descargar-torrent-((.*?)-(.*?))".*?image:url.'([^'"]+).*?">([^"]+).*?]]></expres>
+<page>http://www.mastorrents.com/?pPag=[paginado.param1]</page>
+</regex>
+ 
+ 
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title> [COLOR lime][regex.param3][COLOR orange][COLOR linen] Peso-[COLOR peru][regex1.param9][/COLOR]</title>
+<link>$doregex[select]</link>
+<thumbnail>[regex.param3]</thumbnail>
+<fanart>[regex.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)<a href="javascript:showDownload([^,]+).*?,([^,]+).*?,([^h]+).*?([^']+).*?<([^>]+).*?>([^"]+).*?>([^>]+).*?<i>([^<]+).*?<i>([^<]+).*?]]></expres>
+<page>http://www.mastorrents.com/pelicula/descargar-torrent-[regex.param1]</page>
+</regex>
+ 
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Ver con:', ['[COLOR yellow]Quasar[/COLOR]', '[COLOR yellow]Torrenter[/COLOR]', '[COLOR yellow]Elementum[/COLOR]', '[COLOR yellow]Torrentin[/COLOR]'])
+    channels = [
+  'plugin://plugin.video.quasar/play?uri=[regex1.param4]&image=imageurl&player=0',
+  'plugin://plugin.video.torrenter/?action=playSTRM&url=[regex1.param4]&image=imageurl&player=0',
+  'plugin://plugin.video.elementum/play?uri=[regex1.param4]&image=imageurl&player=0',
+  'plugin://plugin.video.torrentin/?uri=[regex1.param4]&image=imageurl&player=0']  
+    return channels[ret]
+]]></expres>
+<page></page>
+</regex>
+ 
+<fanart>https://s20.postimg.cc/6w5ncwwml/fondo_mastorrent_peliculas.jpg</fanart>
+<thumbnail>https://s20.postimg.cc/5tvgucydp/mastorrents.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR white]Genula Series Buscar[/COLOR]</title>
+<link>$doregex[regex]</link>
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex.param1][/COLOR]</title>
+<link>$doregex[regex1]</link>
+<info>[COLOR white][/COLOR]</info>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[https://gnula.se/lista-de-series/([^/]+).*?]]></expres>
+<page>https://gnula.se/</page>
+</regex>
+
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex1.param2][/COLOR]</title>
+<link>$doregex[regex2]</link>
+<info>[COLOR white][/COLOR]</info>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[
+<li> <a href="/capitulos/([^/]+).*?="([^"]+).*?]]></expres>
+<page>https://gnula.se/lista-de-series/[regex.param1]</page>
+</regex>
+
+<regex>
+<name>regex2</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex1.param2] Temporada [regex2.param1][/COLOR]</title>
+<link>$doregex[regex3]</link>
+<info>[COLOR white][/COLOR]</info>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[https://gnula.se/capitulo/[regex1.param1]/([^"]+).*?]]></expres>
+<page>https://gnula.se/capitulos/[regex1.param1]</page>
+</regex>
+
+<regex>
+<name>regex3</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex3.param1][/COLOR]</title>
+<urlsolve>[regex3.param1]</urlsolve>
+<info>[COLOR white][/COLOR]</info>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[ ]]></expres>
+<page>https://gnula.se/capitulo/[regex1.param1]/[regex2.param1]</page>
+</regex>
+
+<thumbnail>https://gnula.se/img/logo.png</thumbnail>
+<fanart>https://gnula.se/img/logo.png</fanart>
+</item>
+
 <title>[COLOR white]Latino Web TV[/COLOR]</title>
 <link>$doregex[regex]</link>
 
