@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>Captcha</title>
-<link>$doregex[regex]</link>
+    <title>Captcha</title>
+    <link>$doregex[regex]</link>
 
-<regex>
-<name>regex</name>
-<listrepeat><![CDATA[
-<title>[COLOR white]Captcha[/COLOR]</title>
-<urlsolve>$doregex[regex.param1]</urlsolve>
-<thumbnail></thumbnail>
-<fanart></fanart>
-]]></listrepeat>
-<expres>(.*)</expres>
-<page>$pyFunction: unCaptcha.performCaptcha('https://gnula.se/link/3216204',Cookie_Jar,returnpage=True)</page>
-<NOTPlayable>True</NOTPlayable>
-</regex>
+    <regex>
+        <name>regex</name>
+        <expres>
+            <![CDATA[#$pyFunction
+           def GetLSProData(page_data,Cookie_Jar,m,url='$doregex[regex1]'):
+            import re
+            import requests
+            headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:44.0) Gecko/20100101 Firefox/44.0 Iceweasel/44.0'}
+            source = requests.get(url, headers=headers)
+            maxi = re.findall('(http.*)', source.text)[0]
+            clean=maxi.replace('|','%7C')
+            cookie2 = source.cookies['_g']
+            return clean + '|Referer=http://tutvgratis.tv/&Cookie=_g=' + cookie2
+
+           ]]>
+        </expres>
+        <page></page>
+    </regex>
+
+    <regex>
+        <name>regex1</name>
+        <expres>file: "(.*?)"</expres>
+        <page>$pyFunction: unCaptcha.performCaptcha('https://gnula.se/link/3216204',Cookie_Jar,returnpage=True)</page>
+        <agent>Mozilla/5.0 (X11; Linux i686; rv:44.0) Gecko/20100101 Firefox/44.0 Iceweasel/44.0</agent>
+    </regex>
 </item>
 
 
