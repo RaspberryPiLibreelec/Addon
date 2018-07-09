@@ -601,7 +601,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail></thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
-<expres><![CDATA[https://gnula.se/capitulo/[regex1.param1]/([^"]+).*?]]></expres>
+<expres><![CDATA[https://gnula.se/capitulo/[regex1.param1]/([^/]+).*?/([^/]+).*?]]></expres>
 <page>https://gnula.se/capitulos/[regex1.param1]</page>
 </regex>
 
