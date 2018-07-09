@@ -595,7 +595,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>regex2</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][regex1.param2] Temporada [regex2.param1][/COLOR]</title>
+<title>[COLOR white][regex1.param2] Temporada [regex2.param1] Capitulo [regex2.param2][/COLOR]</title>
 <link>$doregex[regex3]</link>
 <info>[COLOR white][/COLOR]</info>
 <thumbnail></thumbnail>
@@ -608,14 +608,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>regex3</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][regex3.param1][/COLOR]</title>
+<title>[COLOR white][regex1.param2] Temporada [regex2.param1] Capitulo [regex2.param2][/COLOR]</title>
 <urlsolve>[regex3.param1]</urlsolve>
 <info>[COLOR white][/COLOR]</info>
 <thumbnail></thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
 <expres><![CDATA[ ]]></expres>
-<page>https://gnula.se/capitulo/[regex1.param1]/[regex2.param1]</page>
+<page>https://gnula.se/capitulo/[regex1.param1]/[regex2.param1]/[regex2.param2]</page>
 </regex>
 
 <thumbnail>https://gnula.se/img/logo.png</thumbnail>
