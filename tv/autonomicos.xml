@@ -8,7 +8,7 @@
 <name>regex</name>
 <listrepeat><![CDATA[
 <title>[COLOR white]Captcha[/COLOR]</title>
-<link>$doregex[regex.param1]</link>
+<urlsolve>$doregex[regex.param1]</urlsolve>
 <thumbnail></thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
