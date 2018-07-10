@@ -39,7 +39,7 @@
 <thumbnail>[regex1.param3]</thumbnail>
 <fanart>[regex1.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[https://www.pelisplus.tv/pelicula/([^\/]+).*?title="([^"]+).*?src="([^"]+).*?]]></expres>
+<expres><![CDATA[(?s)href="https://www.pelisplus.tv/pelicula/([^\/]+).*?title="([^"]+).*?src="(.*?)".*?]]></expres>
 <page>https://www.pelisplus.tv/peliculas/accion/[regex.param4]/page/[page.param1]</page>
 </regex>
 
