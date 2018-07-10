@@ -51,7 +51,7 @@
 <thumbnail>[regex1.param3]</thumbnail>
 <fanart>[regex1.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[li data-id="([^"]+).*?js-([^i]+).*?> ([^<]+).*?span>(.*?)<.*?]]></expres>
+<expres><![CDATA[(?s)li data-id="([^"]+).*?js-([^i]+).*?> ([^<]+).*?span>(.*?)<.*?]]></expres>
 <page>https://www.pelisplus.tv/serie/[regex1.param1]/</page>
 </regex>
 
@@ -63,7 +63,7 @@
 <thumbnail>[regex3.param5]</thumbnail>
 <fanart>[regex1.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[0" data-subtitle="([^S]+).*? ([^/]+).*? ([^"]+).*?videourl="([^"]+).*?" data-duration="0" data-isserie="true" data-serie="3418" >
+<expres><![CDATA[(?s)0" data-subtitle="([^S]+).*? ([^/]+).*? ([^"]+).*?videourl="([^"]+).*?" data-duration="0" data-isserie="true" data-serie="3418" >
 <header class="Chapter-header">
 <div class="Chapter-image-container"> <img class="Chapter-image" srcset-polyfill="(.*?) .*?]]></expres>
 <page>https://www.pelisplus.tv/serie/[regex1.param1]/#season-[regex2.param4]/</page>
