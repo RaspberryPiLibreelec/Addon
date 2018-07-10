@@ -17,7 +17,7 @@
 </div>
 </div>
 </div>
-<div class="media-list" data-order="([^"]+).*?id="([^"]+).*?DE  ([^<]+).*?https://www.pelisplus.tv/peliculas/(.*?)/.*?]]></expres>
+<div class="media-list" data-order="([^"]+).*?101.494.([^"]+).*?DE  ([^<]+).*?https://www.pelisplus.tv/peliculas/(.*?)/.*?]]></expres>
 <page>https://www.pelisplus.tv/peliculas/</page>
 </regex>
 
@@ -39,7 +39,7 @@
 <thumbnail>[regex1.param3]</thumbnail>
 <fanart>[regex1.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)la/([^\/]+).*?title="([^"]+).*?src="(.*?)".*?]]></expres>
+<expres><![CDATA[(?s)pelicula/([^\/]+).*?title="([^"]+).*?src="(.*?)".*?]]></expres>
 <page>https://www.pelisplus.tv/peliculas/[regex.param4]/?page=[page.param1]</page>
 </regex>
 
@@ -51,7 +51,7 @@
 <thumbnail>https://www.pelisplus.tv/[regex2.param3]</thumbnail>
 <fanart>[regex1.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[host="([^"]+).*?url=([^"]+).*?src="/([^"]+).*?]]></expres>
+<expres><![CDATA[(?s)host="([^"]+).*?url=([^"]+).*?src="/(.*?)".*?]]></expres>
 <page>https://www.pelisplus.tv/pelicula/[regex1.param1]</page>
 </regex>
 
