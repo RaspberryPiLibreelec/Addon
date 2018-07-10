@@ -40,7 +40,7 @@
 <fanart>[regex1.param3]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[(?s)la/([^\/]+).*?title="([^"]+).*?src="(.*?)".*?]]></expres>
-<page>https://www.pelisplus.tv/peliculas/[regex.param4]/page/[page.param1]</page>
+<page>https://www.pelisplus.tv/peliculas/[regex.param4]/?page=[page.param1]</page>
 </regex>
 
 <regex>
