@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
-<title>[COLOR white]Pelisplus Series Generos[/COLOR]</title>
+<title>[COLOR white]PelisplusTv Series Generos[/COLOR]</title>
 <link>$doregex[regex]</link>
 
 <regex>
@@ -28,7 +28,7 @@
 <link>$doregex[regex1]</link>
 ]]></listrepeat>
 <expres>'(.*?)'</expres>
-<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25''26''27''28''29''30'</page>
+<page>'1''2''3''4''5'</page>
 </regex>
 
 <regex>
@@ -46,13 +46,39 @@
 <regex>
 <name>regex2</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][regex1.param2] [regex2.param1][/COLOR]</title>
-<urlsolve>[regex2.param2]</urlsolve>
-<thumbnail>https://www.pelisplus.tv/[regex2.param3]</thumbnail>
+<title>[COLOR white][regex1.param2] Temporada [regex2.param4][/COLOR]</title>
+<link>$doregex[regex3]</link>
+<thumbnail>[regex1.param3]</thumbnail>
 <fanart>[regex1.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)host="([^"]+).*?url=([^"]+).*?src="/(.*?)".*?]]></expres>
+<expres><![CDATA[li data-id="([^"]+).*?js-([^i]+).*?> ([^<]+).*?span>(.*?)<.*?]]></expres>
 <page>https://www.pelisplus.tv/serie/[regex1.param1]/</page>
+</regex>
+
+<regex>
+<name>regex3</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex1.param2] Temporada [regex2.param4] Capitulo [regex3.param3] [regex3.param1][/COLOR]</title>
+<link>$doregex[regex4]</link>
+<thumbnail>[regex3.param5]</thumbnail>
+<fanart>[regex1.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[0" data-subtitle="([^S]+).*? ([^/]+).*? ([^"]+).*?videourl="([^"]+).*?" data-duration="0" data-isserie="true" data-serie="3418" >
+<header class="Chapter-header">
+<div class="Chapter-image-container"> <img class="Chapter-image" srcset-polyfill="(.*?) .*?]]></expres>
+<page>https://www.pelisplus.tv/serie/[regex1.param1]/#season-[regex2.param4]/</page>
+</regex>
+
+<regex>
+<name>regex4</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex1.param2] Temporada [regex2.param4] Capitulo [regex3.param3] [regex3.param1] [regex4.param1][/COLOR]</title>
+<urlsolve>[regex4.param2]</urlsolve>
+<thumbnail>https://www.pelisplus.tv/[regex4.param3]</thumbnail>
+<fanart>[regex3.param5]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)host="([^"]+).*?url=([^"]+).*?src="/(.*?)".*?]]></expres>
+<page>https://www.pelisplus.tv/serie/[regex1.param1]/[regex3.param4]</page>
 </regex>
 
 <thumbnail>https://www.pelisplus.tv/assets/images/logo.png</thumbnail>
