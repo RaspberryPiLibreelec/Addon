@@ -39,7 +39,7 @@
 <thumbnail>[regex1.param3]</thumbnail>
 <fanart>[regex1.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)pelicula/([^\/]+).*?title="([^"]+).*?src="(.*?)".*?]]></expres>
+<expres><![CDATA[(?s)pelicula/([^/]+).*?title="([^"]+).*?src="(.*?)".*?]]></expres>
 <page>https://www.pelisplus.tv/peliculas/[regex.param4]/?page=[page.param1]</page>
 </regex>
 
@@ -52,7 +52,7 @@
 <fanart>[regex1.param3]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[(?s)host="([^"]+).*?url=([^"]+).*?src="/(.*?)".*?]]></expres>
-<page>https://www.pelisplus.tv/pelicula/[regex1.param1]</page>
+<page>https://www.pelisplus.tv/pelicula/[regex1.param1]/</page>
 </regex>
 
 <thumbnail>https://www.pelisplus.tv/assets/images/logo.png</thumbnail>
