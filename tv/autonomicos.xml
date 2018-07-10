@@ -12,7 +12,7 @@
 <thumbnail></thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
-<expres><![CDATA[list" data-order="([^"]+).*?101\.494\.([^"]+).*?PELÍCULAS DE  ([^<]+).*?https:\/\/www\.pelisplus\.tv\/peliculas\/([^\/]+).*?]]></expres>
+<expres><![CDATA[list" data-order="([^"]+).*?" data-id="101\.494\.([^"]+).*?"><h2 class="Heading--carousel"> PELÍCULAS DE  ([^<]+).*?<a class="Heading-link" title="View All" href="https:\/\/www\.pelisplus\.tv\/peliculas\/([^\/]+).*?]]></expres>
 <page>https://www.pelisplus.tv/peliculas/</page>
 </regex>
 
