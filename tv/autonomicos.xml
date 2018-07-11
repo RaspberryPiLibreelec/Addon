@@ -1,5 +1,86 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
+
+<item>
+<title>[COLOR white]PelisplusTv Series Generos[/COLOR]</title>
+<link>$doregex[regex5]</link>
+
+<regex>
+<name>regex5</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex5.param1][/COLOR]</title>
+<link>$doregex[regex6]</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)class="media-list"[\w\W\s]{0,300}carousel">([^<]+)[\w\W\s]{0,100}href="https:\/\/www\.pelisplus\.tv\/series\/([^"]+).*?]]></expres>
+<page>https://www.pelisplus.tv/series/</page>
+</regex>
+
+<regex>
+<name>regex6</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex6.param2][/COLOR]</title>
+<link>$doregex[regex7]</link>
+<thumbnail>[regex6.param3]</thumbnail>
+<fanart>[regex6.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)a\shref="https:\/\/www.pelisplus\.tv\/serie([^"]+)[\w\W\s]{0,200}data-title="([^"]+).*?src="([^"]+).*?]]></expres>
+<page>https://www.pelisplus.tv/series/[regex5.param2]</page>
+</regex>
+
+<regex>
+<name>regex7</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex7.param1] [regex7.param2][/COLOR]</title>
+<link>$doregex[paginando]</link>
+<thumbnail>[regex6.param3]</thumbnail>
+<fanart>[regex6.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)class="js-season-item">\s([^<]+)<span>([^<]+).*?]]></expres>
+<page>https://www.pelisplus.tv/serie[regex6.param1]</page>
+</regex>
+
+<regex>
+<name>paginando</name>
+<listrepeat><![CDATA[
+<title>[COLOR white]Pagina [paginando.param1][/COLOR]</title>
+<link>$doregex[regex8]</link>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5'</page>
+</regex>
+
+<regex>
+<name>regex8</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex8.param2][/COLOR]</title>
+<link>$doregex[regex9]</link>
+<info>[regex8.param3]</info>
+<thumbnail>[regex8.param1]</thumbnail>
+<fanart>[regex8.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)img\sclass="Chapter-image"[\w\W\s]{0,350}src="([^"]+)[\w\W\s]{0,500}class="Chapter-content">[\w\W\s]{0,50}class="Chapter-title\sjs-title">\s([^<]+)[\w\W\s]{0,70}js-synopsis">\s([^<]+)]]></expres>
+<page>https://www.pelisplus.tv/serie[regex6.param1]</page>
+</regex>
+
+<regex>
+<name>regex9</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex8.param2][/COLOR]</title>
+<urlsolve>[regex9.param3]</urlsolve>
+<thumbnail>[regex8.param1]</thumbnail>
+<fanart>[regex8.param1]</fanart>
+]]></listrepeat>
+<expres>class="Btn--detail"\shref="([^"]+)[\w\W\s]{0,2800}host="([^"]+)[\w\W\s]{0,100}url=([^"]+).*?</expres>
+<page>[regex9.param1]</page>
+</regex>
+ 
+<thumbnail>https://www.pelisplus.tv/assets/images/logo.png</thumbnail>
+<fanart>https://www.pelisplus.tv/assets/images/logo.png</fanart>
+
+</item>
+
 <item>
 <title>[COLOR white]PelisplusTv Series Generos[/COLOR]</title>
 <link>$doregex[regex]</link>
