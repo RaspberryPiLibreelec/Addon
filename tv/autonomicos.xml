@@ -7,6 +7,59 @@
 <regex>
 <name>regex</name>
 <listrepeat><![CDATA[
+<title>[COLOR white][regex.param2][/COLOR]</title>
+<link>$doregex[regex1]</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)li>
+                    <a href="/([^"]+).*?
+                        <i class="ion-cube"></i>(.*?) .*?]]></expres>
+<page>http://pelisplus.co/</page>
+</regex>
+
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex1.param3] [regex1.param4][/COLOR]</title>
+<link>$doregex[regex2]</link>
+<thumbnail>[regex1.param2]</thumbnail>
+<fanart>[regex1.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)                     <a href="/([^"]+).*?
+                            <figure><img class="lazy" data-src="([^"]+).*?
+                            <p>([^<]+).*?
+                            <span>(.*?)<.*?]]></expres>
+<page>http://pelisplus.co/[regex.param1]</page>
+</regex>
+
+<regex>
+<name>regex2</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex1.param3] [regex1.param4] [regex2.param2][/COLOR]</title>
+<urlsolve>[regex2.param1]</urlsolve>
+<thumbnail>[regex1.param4]</thumbnail>
+<fanart>[regex1.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)source="([^"]+).*?
+                                    data-quality="([^"]+).*?
+                                    data-srt="([^"]+).*?
+                                    data-iframe=""
+                                    data-cover="(.*?)".*?]]></expres>
+<page>http://pelisplus.co/[regex1.param1]/</page>
+</regex>
+
+<thumbnail>http://pelisplus.co/assets/img/pelisplus.png</thumbnail>
+<fanart>http://pelisplus.co/assets/img/pelisplus.png</fanart>
+</item>
+
+<item>
+<title>[COLOR white]PelisplusTv Series Generos[/COLOR]</title>
+<link>$doregex[regex]</link>
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
 <title>[COLOR white][regex.param3][/COLOR]</title>
 <link>$doregex[page]</link>
 <thumbnail></thumbnail>
