@@ -1,5 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
+<item>
+<title>[COLOR white]Inkapelis Generos[/COLOR]</title>
+<link>$doregex[generos]</link>
+
+<regex>
+<name>generos</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][generos.param3][/COLOR]</title>
+<link>$doregex[paginas]</link>
+]]></listrepeat>
+<expres><![CDATA[(?s)cat-item-([^"]+).*?https://www.inkapelis.com/([^"]+).*?>(.*?)<.*?]]></expres>
+<page>https://www.inkapelis.com/</page>
+</regex>
+
+<regex>
+<name>paginas</name>
+<listrepeat><![CDATA[
+<title>[COLOR white]Pagina [paginas.param1][/COLOR]</title>
+<link>$doregex[peliculas]</link>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25''26''27''28''29''30''31''32''33''34''35''36''37''38''39''40''41''42''43''44''45''46''47''48''49''50''51''52''53''54''55''56''57''58''59''60''61''62''63''64''65'</page>
+</regex>
+
+<regex>
+<name>peliculas</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][peliculas.param2][/COLOR]</title>
+<link>$doregex[enlaces]</link>
+<thumbnail>[peliculas.param1]</thumbnail>
+<fanart>[peliculas.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)" src="([^"]+).*?title="([^"]+).*?https://www.inkapelis.com/(.*?)/.*?]]></expres>
+<page>https://www.inkapelis.com/[generos.param2]page/[paginas.param1]</page>
+</regex>
+
+<regex>
+<name>enlaces</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][peliculas.param2] [enlaces.param1] [enlaces.param3][/COLOR]</title>
+<urlsolve>[enlaces.param2]</urlsolve>
+<thumbnail>[peliculas.param1]</thumbnail>
+<fanart>[peliculas.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)true"></span> ([^<]+).*?domain=([^"]+).*?="(.*?)".*?]]></expres>
+<page>https://www.inkapelis.com/[peliculas.param3]</page>
+</regex>
+
+<thumbnail>https://www.inkapelis.com/wp-content/uploads/2016/07/logitoinkapelis-min.png</thumbnail>
+<fanart>https://www.inkapelis.com/wp-content/uploads/2016/07/logitoinkapelis-min.png</fanart>
+</item>
 
 <item>
 <title>[COLOR white]PelisplusTv Series Generos[/COLOR]</title>
