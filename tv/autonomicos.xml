@@ -7,7 +7,7 @@
 <regex>
 <name>años</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][generos.param3][/COLOR]</title>
+<title>[COLOR white][años.param1][/COLOR]</title>
 <link>$doregex[paginas]</link>
 ]]></listrepeat>
 <expres><![CDATA['(.*?)']]></expres>
