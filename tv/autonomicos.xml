@@ -2,12 +2,12 @@
 
 <item>
 <title>[COLOR white]INKAPELIS.com[/COLOR]</title>
-<link>$doregex[años]</link>
+<link>$doregex[anios]</link>
 
 <regex>
-<name>años</name>
+<name>anios</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][años.param1][/COLOR]</title>
+<title>[COLOR white][anios.param1][/COLOR]</title>
 <link>$doregex[paginas]</link>
 ]]></listrepeat>
 <expres><![CDATA['(.*?)']]></expres>
