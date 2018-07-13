@@ -3,12 +3,12 @@
 
 <item>
 <title>[COLOR white]INKAPELIS.com[/COLOR]</title>
-<link>$doregex[años]</link>
+<link>$doregex[regex]</link>
 
 <regex>
-<name>años</name>
+<name>regex</name>
 <listrepeat><![CDATA[
-<title>[COLOR white][años.param1][/COLOR]</title>
+<title>[COLOR white][regex.param1][/COLOR]</title>
 <link>$doregex[paginas]</link>
 ]]></listrepeat>
 <expres>'(.*?)'</expres>
@@ -34,7 +34,7 @@
 <fanart>[peliculas.param1]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[(?s)" src="([^"]+).*?title="([^"]+).*?https://www.inkapelis.com/(.*?)/.*?]]></expres>
-<page>https://www.inkapelis.com/year_relase/[años.param1]/page/[paginas.param1]</page>
+<page>https://www.inkapelis.com/year_relase/[regex.param1]/page/[paginas.param1]</page>
 </regex>
 
 <regex>
