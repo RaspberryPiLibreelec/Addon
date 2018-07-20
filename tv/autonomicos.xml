@@ -1,6 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
+<title>[COLOR white]PELISCITY.com[/COLOR]</title>
+<link>$doregex[generos]</link>
+
+<regex>
+<name>generos</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][generos.param3][/COLOR]</title>
+<link>$doregex[paginas]</link>
+]]></listrepeat>
+<expres><![CDATA[(?s)cat-item-([^"]+).*?"><a
+href="http://www.peliscity.com/genero/([^/]+).*?>(.*?)<.*?]]></expres>
+<page>http://www.peliscity.com</page>
+</regex>
+
+<regex>
+<name>paginas</name>
+<listrepeat><![CDATA[
+<title>[COLOR white]Pagina [paginas.param1][/COLOR]</title>
+<link>$doregex[peliculas]</link>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25''26''27''28''29''30''31''32''33''34''35''36''37''38''39''40''41''42''43''44''45''46''47''48''49''50''51''52''53''54''55''56''57''58''59''60''61''62''63''64''65'</page>
+</regex>
+
+<regex>
+<name>peliculas</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][peliculas.param3][/COLOR]</title>
+<link>$doregex[enlaces]</link>
+<info>[COLOR white][peliculas.param6][/COLOR]</info>
+<thumbnail>[peliculas.param1]</thumbnail>
+<fanart>[peliculas.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)' src="([^"]+).*?
+class="infor">
+<a
+href="([^"]+).*?h2>([^<]+).*?
+class="title">
+<span
+class="under-title-gnro">• ([^<]+).*?
+class="detalles"><div
+class="punta"></div><div
+class="titulo">([^<]+).*?
+class="sinopsis">(.*?)<.*?]]></expres>
+<page>http://www.peliscity.com/[generos.param2]/page/[paginas.param1]</page>
+</regex>
+
+<regex>
+<name>enlaces</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][peliculas.param3] [enlaces.param3] [enlaces.param5][/COLOR]</title>
+<urlsolve>[enlaces.param1]</urlsolve>
+<info>[COLOR white][peliculas.param6][/COLOR]</info>
+<thumbnail>[peliculas.param1]</thumbnail>
+<fanart>[enlaces.param4]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)hand" rel="([^"]+).*?
+<span
+class="opnum">([^<]+).*?
+<span
+class="optxt"><span>([^<]+).*?
+class="q">
+<img
+src="([^"]+).*?
+class="q">(.*?)<.*?]]></expres>
+<page>http://www.peliscity.com/[peliculas.param2]</page>
+</regex>
+
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
 <title>[COLOR white]INKAPELIS.com[/COLOR]</title>
 <link>$doregex[años]</link>
 
