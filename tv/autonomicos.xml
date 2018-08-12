@@ -2,6 +2,50 @@
 
 <item>
 <title>[COLOR white]Avezy[/COLOR]</title>
+<link>$doregex[deportes]</link>
+
+<regex>
+<name>deportes</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][deportes.param1] ([deportes.param2] eventos)[/COLOR]</title>
+<link>$doregex[eventos]</link>
+<thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
+<fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
+]]></listrepeat>
+<expres>categoria":"(.*?)","items":"(.*?)"</expres>
+<page>https://avezy.xyz/json.php</page>
+</regex>
+
+<regex>
+<name>eventos</name>
+<listrepeat><![CDATA[
+<title>[COLOR steelblue][eventos.param2] - [eventos.param3][/COLOR] [COLOR white][eventos.param5][/COLOR]</title>
+<link>$doregex[enlaces]</link>
+<thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
+<fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
+]]></listrepeat>
+<expres>"id":"(.*?)","fecha":"(.*?)","hora":"(.*?)","categoria":"(.*?)","titulo":"(.*?)"</expres>
+<page>https://avezy.xyz/json.php?action=listado_eventos&amp;cat=[deportes.param1]</page>
+</regex>
+
+<regex>
+<name>enlaces</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][[enlaces.param3]][/COLOR] [COLOR red][enlaces.param1][/COLOR] [COLOR white][eventos.param5][/COLOR]</title>
+<link>plugin://program.plexus/?url=[enlaces.param2]&amp;mode=1&amp;name=deportes</link>
+<thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
+<fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
+]]></listrepeat>
+<expres>canal":"(.+?)".*?acestream:\\\/\\\/(.*?)".*?idioma":"(.*?)"</expres>
+<page>https://avezy.xyz/json.php?action=listado_canales&amp;evento=[eventos.param1]</page>
+</regex>
+
+<thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
+<fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
+</item>
+
+<item>
+<title>[COLOR white]Avezy[/COLOR]</title>
 <link>$doregex[regex]</link>
 
 <regex>
