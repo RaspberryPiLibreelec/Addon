@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
+<title>[COLOR white]Avezy[/COLOR]</title>
+<link>$doregex[regex]</link>
+
+<regex>
+<name>regex</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][regex.param1] [regex.param2]H.[regex.param4] [regex.param5] [regex.param6][/COLOR]</title>
+<link>plugin://program.plexus/?url=[regex.param7]&amp;mode=1&amp;name=regex</link>
+<thumbnail>https://avezy.xyz/[regex.param3]</thumbnail>
+<fanart>https://avezy.xyz/[regex.param3]</fanart>
+</item>
+]]></listrepeat>
+<expres><![CDATA[(?s)center'>([^<]+).*?br>([^<]+).*? src="(.*?)".*? title='([^']+).*?br>([^<]+).*?AV([^<]+).*?acestream://(.*?)".*?]]></expres>
+<page>https://avezy.xyz/</page>
+</regex>
+
+<thumbnail>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</thumbnail>
+<fanart>https://i1.wp.com/dimitrology.com/wp-content/uploads/2017/08/icon-5.png</fanart>
+</item>
+
+<item>
 <title>[COLOR white]PELISCITY.com[/COLOR]</title>
 <link>$doregex[generos]</link>
 
