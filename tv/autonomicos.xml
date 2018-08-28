@@ -38,7 +38,7 @@
 ]]></listrepeat>
 <expres><![CDATA[fotonoticia">
 <a target="_blank" href="([^"]+).*?src="([^"]+).*?alt="([^"]+).*?]]></expres>
-<page>http://www.ciberdocumentales.com[categorias.param1]/[paginas.param1]/</page>
+<page>http://www.ciberdocumentales.com[categorias.param1][paginas.param1]/</page>
 </regex>
 
 <regex>
