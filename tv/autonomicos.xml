@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
+<title>[COLOR white]CIBERDOCUMENTALES[/COLOR]</title>
+<link>$doregex[categorias]</link>
+
+<regex>
+<name>categorias</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][categorias.param2][/COLOR]</title>
+<link>$doregex[paginas]</link>
+<info>[COLOR white][/COLOR]</info>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[:capitalize;" href="([^"]+).*?">([^<]+).*?]]></expres>
+<page>http://www.ciberdocumentales.com/</page>
+</regex>
+
+<regex>
+<name>paginas</name>
+<listrepeat><![CDATA[
+<title>[COLOR white]Pagina [paginas.param1][/COLOR]</title>
+<link>$doregex[peliculas]</link>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25''26''27''28''29''30''31''32''33''34''35''36''37''38''39''40''41''42''43''44''45''46''47''48''49''50'</page>
+</regex>
+
+<regex>
+<name>documentales</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][documentales.param3][/COLOR]</title>
+<link>$doregex[enlaces]</link>
+<info>[COLOR white][enlaces.param1][/COLOR]</info>
+<thumbnail>[documentales.param2]</thumbnail>
+<fanart>[documentales.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[fotonoticia">
+<a target="_blank" href="([^"]+).*?src="([^"]+).*?alt="([^"]+).*?]]></expres>
+<page>http://www.ciberdocumentales.com[categorias.param1]/[paginas.param1]/</page>
+</regex>
+
+<regex>
+<name>enlaces</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][documentales.param3][/COLOR]</title>
+<urlsolve>[enlaces.param2]</urlsolve>
+<info>[COLOR white][enlaces.param1][/COLOR]</info>
+<thumbnail>[documentales.param2]</thumbnail>
+<fanart>[documentales.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[font-size: 11pt; color: black">([^<]+).*?</p>
+<object width="655" height="480">
+<param name="movie" value="([^"]+).*?]]></expres>
+<page>http://www.ciberdocumentales.com[documentales.param1]</page>
+</regex>
+
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
 <title>[COLOR white]Avezy[/COLOR]</title>
 <link>$doregex[deportes]</link>
 
