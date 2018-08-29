@@ -6,7 +6,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://latino-webtv.com/Win_Sports_En_vivo/</page>
+<page>http://futbol-envivo.tv/win-sports-en-vivo/</page>
 <referer>https://player.limpi.tv/embed/40673</referer>
 </regex>
 <thumbnail></thumbnail>
