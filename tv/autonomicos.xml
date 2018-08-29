@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <item>
+<title>Win Sports</title>
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla/5.0</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://latino-webtv.com/Win_Sports_En_vivo/</page>
+<referer>https://player.limpi.tv/embed/40673</referer>
+</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
 <title>[COLOR white]CIBERDOCUMENTALES[/COLOR]</title>
 <link>$doregex[categorias]</link>
 
